@@ -17,6 +17,7 @@ from datetime import datetime, timezone
 
 import requests
 from bs4 import BeautifulSoup
+from urllib import robotparser
 
 sys.path.insert(0, os.path.dirname(__file__))
 from iso_mapping import to_iso3  # noqa: E402
@@ -201,6 +202,18 @@ def write_json_atomic(path, obj):
 def run_update():
     """Fetch and rebuild visas.json. Keeps the old file on any failure."""
     try:
+        try:
+            rb = requests.get("https://en.wikipedia.org/robots.txt",
+                              headers=HEADERS, timeout=20)
+            if rb.status_code < 400:
+                rp = robotparser.RobotFileParser()
+                rp.parse(rb.text.splitlines())
+                if not rp.can_fetch(HEADERS["User-Agent"], SOURCE_URL):
+                    raise RuntimeError("robots.txt disallows fetching the article")
+        except RuntimeError:
+            raise
+        except Exception:  # noqa: BLE001 - unreachable robots.txt doesn't block
+            pass
         log("fetching Wikipedia visa requirements page...")
         r = requests.get(SOURCE_URL, headers=HEADERS, timeout=60)
         r.raise_for_status()

@@ -1,0 +1,91 @@
+name: Update data and deploy
+
+on:
+  schedule:
+    - cron: "0 19 * * *"   # daily, ~05:00 Australia/Sydney
+  workflow_dispatch:        # manual "Refresh now" from the Actions tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # commit refreshed data back (keeps history.json accruing)
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests beautifulsoup4 lxml
+
+      # The Natural Earth masters (~65 MB, immutable) are cached, not committed.
+      - name: Cache Natural Earth masters
+        uses: actions/cache@v4
+        with:
+          path: data/geo
+          key: natural-earth-v1
+
+      # The scraper's page cache makes daily runs incremental (~1 request when
+      # nothing changed, instead of 179).
+      - name: Restore scraper cache
+        uses: actions/cache@v4
+        with:
+          path: data/updater_state.json
+          key: updater-state-${{ github.run_id }}
+          restore-keys: updater-state-
+
+      - name: Fetch geo masters (skips if cached)
+        run: python updater/fetch_geo.py
+
+      - name: Build countries.geojson
+        run: python updater/build_geo.py
+
+      # If a scrape fails, the step fails, nothing is committed and the
+      # previous deployment stays live - last good data always wins.
+      - name: Scrape advisories
+        env:
+          SCRAPER_CONTACT: ${{ secrets.SCRAPER_CONTACT }}
+        run: python updater/scraper.py
+
+      - name: Scrape visa requirements
+        env:
+          SCRAPER_CONTACT: ${{ secrets.SCRAPER_CONTACT }}
+        run: python updater/visa_scraper.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/advisories.json data/visas.json data/history.json data/status.json \
+                  web/data/countries.geojson web/data/subregions.geojson
+          if git diff --cached --quiet; then
+            echo "no data changes"
+          else
+            git commit -m "data: scheduled refresh"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - name: Build static site
+        run: |
+          mkdir -p _site/data
+          cp -r web/. _site/
+          cp data/advisories.json data/visas.json data/history.json data/status.json _site/data/
+          cp LICENSE DATA-LICENSES.md _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

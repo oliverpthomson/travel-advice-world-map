@@ -67,10 +67,25 @@ done. After that, startup is instant.
 - On any scrape failure the last good `data/advisories.json` is kept and the
   error recorded in `data/status.json` (surfaced as a banner in the UI).
 - The previous snapshot is kept at `data/advisories.prev.json`.
-- The scraper is polite: throttled (~0.7 s between requests), retries with
-  backoff, and only re-fetches changed pages. Note: the Smartraveller CDN
-  stalls non-browser User-Agents, so a browser-style UA is used with a `From:`
-  contact header.
+
+### Scraping etiquette
+
+The updaters are deliberately conservative:
+
+- `robots.txt` is checked before every run; an explicit Disallow aborts the
+  scrape (keeping the last good data).
+- Requests are throttled (~0.7 s apart) with retry/backoff, and a country
+  page is only re-fetched when the index says its advice changed — a routine
+  daily refresh is ~1 request.
+- Set `SCRAPER_CONTACT=you@example.com` so your contact address travels in
+  the request headers.
+- Note: the Smartraveller CDN stalls non-browser User-Agents (requests hang
+  until timeout), so the advisory scraper identifies with a browser-style UA
+  and carries the contact address in a `From:` header instead. The Wikipedia
+  scraper uses a descriptive UA as Wikimedia policy asks.
+- When deployed via the included GitHub Actions workflow, scraping happens
+  once per day *in total* — visitors of the published site never trigger
+  requests to the sources.
 
 ## Using the map
 
@@ -141,6 +156,43 @@ data/
   status.json           # last run result / errors
   geo/                  # Natural Earth master files (admin-0 50m, admin-1 10m)
 ```
+
+## Publishing (GitHub Pages)
+
+The repo ships with [.github/workflows/update-data.yml](.github/workflows/update-data.yml),
+which turns the project into a self-updating static site:
+
+1. Push the repo to GitHub.
+2. In the repo settings, set **Pages → Source → GitHub Actions**.
+3. (Optional but polite) add a repository secret `SCRAPER_CONTACT` with your
+   contact email for the scraper headers.
+4. Done. The workflow runs daily (~05:00 AEST), on every push, and on demand
+   via **Actions → Update data and deploy → Run workflow**.
+
+How it works:
+
+- Scrapes advisories + visas, then **commits the refreshed JSON back to the
+  repo** — this is what lets `data/history.json` accumulate advice changes
+  over time across runs.
+- Builds the site into `_site/` (the `web/` front-end plus the data files)
+  and deploys it to GitHub Pages.
+- If a scrape fails, the workflow stops: nothing is committed and the
+  previously deployed site stays live — last good data always wins.
+- The Natural Earth masters and the scraper's page cache are kept in the
+  Actions cache, so daily runs are incremental (~1 request to Smartraveller).
+- On the published site the **Refresh button is hidden** (there's no server
+  to re-scrape on demand); it appears automatically when running locally.
+
+The Flask server in `server/` is for **local use only** — never deploy it.
+
+## Disclaimer
+
+This is an unofficial personal project. It is not affiliated with or endorsed
+by the Australian Government or DFAT. The data shown may be incomplete, stale
+or wrong, and is provided as-is with no warranty of any kind. Do not rely on
+it for travel decisions — always check
+[smartraveller.gov.au](https://www.smartraveller.gov.au/) and official embassy
+sources.
 
 ## Licensing
 

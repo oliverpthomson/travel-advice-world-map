@@ -53,7 +53,7 @@
     <button id="palette-toggle" class="btn" aria-pressed="false" title="Colour-blind-friendly palette">CB</button>
     <div class="freshness">
       <span id="freshness-text">Loading…</span>
-      <button id="refresh-btn" class="btn btn-primary" title="Re-scrape the data now">Refresh</button>
+      <button id="refresh-btn" class="btn btn-primary" title="Re-scrape the data now" hidden>Refresh</button>
     </div>
   </div>
 </header>
@@ -121,6 +121,13 @@
   </div>
   <div id="insets-strip" class="insets-strip collapsed"><!-- mini maps injected --></div>
 </section>
+
+<footer class="site-footer">
+  Unofficial personal project — not affiliated with or endorsed by the Australian Government.
+  Data may be incomplete, stale or wrong; provided as-is with no warranty. Always check
+  <a href="https://www.smartraveller.gov.au/" target="_blank" rel="noopener">smartraveller.gov.au</a>
+  and official embassy sources before making travel decisions.
+</footer>
 
 <div id="compare-bar" class="compare-bar" hidden>
   <span class="compare-bar-label">Comparing:</span>

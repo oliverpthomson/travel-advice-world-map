@@ -49,6 +49,26 @@ def static_files(path):
     return send_from_directory(WEB_DIR, path)
 
 
+# The front-end loads all datasets from relative "data/..." URLs so the same
+# code works on static hosting (where the workflow copies these files next to
+# the geojson). Locally, the scraped JSONs live in DATA_DIR.
+DATA_PUBLIC = {"advisories.json", "visas.json", "history.json", "status.json"}
+
+
+@app.get("/data/<name>")
+def data_files(name):
+    if name in DATA_PUBLIC:
+        return send_from_directory(DATA_DIR, name, max_age=0)
+    return send_from_directory(os.path.join(WEB_DIR, "data"), name, max_age=0)
+
+
+@app.get("/api/ping")
+def ping():
+    # Lets the front-end detect it's running against this local server
+    # (enables the Refresh button, which static hosting can't support).
+    return jsonify({"ok": True, "local": True})
+
+
 @app.get("/api/advisories")
 def advisories():
     return send_from_directory(DATA_DIR, "advisories.json", max_age=0)

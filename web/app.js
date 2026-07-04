@@ -852,11 +852,13 @@ function addSmallCountryMarkers(group, inBoundsFn, radius) {
 /* ---------------- data loading & init ---------------- */
 
 async function loadData(isReload) {
+  // Relative data/ URLs work both locally (Flask maps them) and on the
+  // static site (the deploy workflow copies the JSONs into data/).
   const [advRes, statusRes, visaRes, histRes] = await Promise.all([
-    fetch("/api/advisories", { cache: "no-store" }),
-    fetch("/api/status", { cache: "no-store" }).catch(() => null),
-    fetch("/api/visas", { cache: "no-store" }).catch(() => null),
-    fetch("/api/history", { cache: "no-store" }).catch(() => null),
+    fetch("data/advisories.json", { cache: "no-store" }),
+    fetch("data/status.json", { cache: "no-store" }).catch(() => null),
+    fetch("data/visas.json", { cache: "no-store" }).catch(() => null),
+    fetch("data/history.json", { cache: "no-store" }).catch(() => null),
   ]);
   if (!advRes.ok) throw new Error("advisories not available yet");
   advisories = await advRes.json();
@@ -922,6 +924,12 @@ function makeSubregionLayer() {
 }
 
 async function init() {
+  // Show the Refresh button only when the local dev server is answering —
+  // on the published static site there is nothing to POST to.
+  fetch("api/ping", { cache: "no-store" })
+    .then(r => { if (r.ok) $("refresh-btn").hidden = false; })
+    .catch(() => {});
+
   map = L.map("map", {
     minZoom: 1.4, maxZoom: 10, zoomSnap: 0.2, worldCopyJump: true,
     maxBounds: [[-75, -260], [88, 260]], maxBoundsViscosity: 0.5,

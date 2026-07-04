@@ -26,6 +26,7 @@ from datetime import datetime, timezone
 
 import requests
 from bs4 import BeautifulSoup
+from urllib import robotparser
 
 sys.path.insert(0, os.path.dirname(__file__))
 from iso_mapping import to_iso3  # noqa: E402
@@ -90,6 +91,20 @@ PARTIAL_RE = re.compile(
 
 def log(msg):
     print(f"[updater] {msg}", flush=True)
+
+
+def robots_allowed(session, base_url, path, user_agent):
+    """Check robots.txt before scraping. An unreachable or missing robots.txt
+    does not block (standard practice); an explicit Disallow does."""
+    try:
+        r = session.get(base_url + "/robots.txt", headers=HEADERS, timeout=20)
+        if r.status_code >= 400:
+            return True
+        rp = robotparser.RobotFileParser()
+        rp.parse(r.text.splitlines())
+        return rp.can_fetch(user_agent, base_url + path)
+    except Exception:  # noqa: BLE001
+        return True
 
 
 def fetch(session, url):
@@ -326,6 +341,9 @@ def run_update(force=False, progress=None):
             progress(msg)
 
     try:
+        if not robots_allowed(session, BASE, "/destinations", HEADERS["User-Agent"]):
+            raise RuntimeError("robots.txt disallows scraping /destinations - aborting "
+                               "(previous data kept)")
         note("fetching destinations index...")
         index_html = fetch(session, INDEX_URL)
         dests, unmatched = parse_index(index_html)
