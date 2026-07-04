@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Local tooling
+.claude/
+
+# Natural Earth master files - large; downloaded by updater/fetch_geo.py
+data/geo/
+
+# Scraper internals - caches and previous-run snapshots, not for publication
+data/updater_state.json
+data/advisories.prev.json
+data/cache/
+
+# The published outputs stay tracked:
+#   data/advisories.json, data/visas.json, data/history.json, data/status.json
+#   web/data/countries.geojson, web/data/subregions.geojson

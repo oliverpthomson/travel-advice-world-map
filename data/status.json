@@ -1,0 +1,13 @@
+{
+ "lastRunAt": "2026-07-04T06:47:51+00:00",
+ "ok": true,
+ "errors": [],
+ "unmatched": [],
+ "subregionShading": {
+  "matched": 149,
+  "countries": 38
+ },
+ "lastSuccessAt": "2026-07-04T06:47:52+00:00",
+ "destinationCount": 179,
+ "pagesFetched": 0
+}

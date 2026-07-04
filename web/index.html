@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AU Travel Advisory Map</title>
+<link rel="stylesheet" href="lib/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-title">AU Travel Advisory Map</span>
+    <span class="brand-sub">Travel advice from Smartraveller (unofficial)</span>
+  </div>
+
+  <div class="mode-toggle" role="group" aria-label="Map colouring mode">
+    <button id="mode-advice" class="btn seg" aria-pressed="true">Advice levels</button>
+    <button id="mode-visa" class="btn seg" aria-pressed="false">Visas</button>
+  </div>
+
+  <div class="search-wrap">
+    <input id="search" type="search" placeholder="Search a country…" autocomplete="off"
+           aria-label="Search for a country" />
+    <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+  </div>
+
+  <div class="top-actions">
+    <div class="drop-wrap">
+      <button id="watchlist-toggle" class="btn" aria-expanded="false" title="Your starred countries">★ Watchlist</button>
+      <div id="watchlist-panel" class="drop-panel" hidden>
+        <label class="drop-check"><input type="checkbox" id="watchlist-filter-cb"> Show only starred on the map</label>
+        <ul id="watchlist-list" class="drop-list"></ul>
+        <div id="watchlist-empty" class="drop-empty">Nothing starred yet — open a country and click ☆.</div>
+      </div>
+    </div>
+    <div class="drop-wrap">
+      <button id="recent-toggle" class="btn" aria-expanded="false" title="Advice updated in the last 30 days">⏱ Recent</button>
+      <div id="recent-panel" class="drop-panel" hidden>
+        <label class="drop-check"><input type="checkbox" id="recent-filter-cb"> Show only recently updated on the map</label>
+        <ul id="recent-list" class="drop-list"></ul>
+      </div>
+    </div>
+    <select id="region-filter" class="btn region-select" aria-label="Filter by region">
+      <option value="">All regions</option>
+      <option>Africa</option>
+      <option>Americas</option>
+      <option>Asia</option>
+      <option>Europe</option>
+      <option>Middle East</option>
+      <option>Pacific</option>
+    </select>
+    <button id="palette-toggle" class="btn" aria-pressed="false" title="Colour-blind-friendly palette">CB</button>
+    <div class="freshness">
+      <span id="freshness-text">Loading…</span>
+      <button id="refresh-btn" class="btn btn-primary" title="Re-scrape the data now">Refresh</button>
+    </div>
+  </div>
+</header>
+
+<div id="alert-banner" class="alert-banner" hidden>
+  <div class="alert-content">
+    <strong>Watchlist changes</strong>
+    <ul id="alert-list"></ul>
+  </div>
+  <button id="alert-view-watchlist" class="btn">View watchlist</button>
+  <button id="alert-dismiss" class="btn">Mark as seen</button>
+</div>
+
+<div id="stale-banner" class="stale-banner" hidden></div>
+
+<main class="layout">
+  <div id="map" role="application" aria-label="World map of travel advisory levels"></div>
+
+  <aside id="detail-panel" class="detail-panel" hidden aria-live="polite">
+    <button id="detail-close" class="detail-close" aria-label="Close details">×</button>
+    <div class="detail-head">
+      <h2 id="detail-name"></h2>
+      <button id="detail-star" class="star-btn" aria-pressed="false" title="Add to watchlist">☆</button>
+      <button id="detail-compare" class="btn btn-small" title="Add to comparison">+ Compare</button>
+    </div>
+    <div id="detail-level" class="level-chip"></div>
+    <div id="detail-updated" class="detail-updated"></div>
+    <p id="detail-summary" class="detail-summary"></p>
+    <div id="detail-latest" class="detail-latest" hidden>
+      <div class="subregions-title">Latest update</div>
+      <p id="detail-latest-text"></p>
+    </div>
+    <div id="detail-visa" class="detail-visa" hidden>
+      <div class="subregions-title">Visa (Australian passport)</div>
+      <div id="detail-visa-chip" class="level-chip"></div>
+      <div id="detail-visa-req" class="visa-req"></div>
+      <div id="detail-visa-stay" class="detail-updated"></div>
+      <p id="detail-visa-notes" class="visa-notes"></p>
+      <p class="attribution">Visa data adapted from
+        <a href="https://en.wikipedia.org/wiki/Visa_requirements_for_Australian_citizens" target="_blank" rel="noopener">Wikipedia</a>,
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>
+        (may lag). Confirm with the embassy or Smartraveller.</p>
+    </div>
+    <div id="detail-subregions"></div>
+    <div id="detail-history"></div>
+    <a id="detail-link" class="btn btn-primary detail-link" target="_blank" rel="noopener">
+      Open full advice on Smartraveller ↗
+    </a>
+    <p class="attribution">Travel advice © Commonwealth of Australia
+      (<a href="https://www.smartraveller.gov.au/" target="_blank" rel="noopener">Smartraveller</a>),
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
+      Unofficial viewer — not government-endorsed.</p>
+  </aside>
+
+  <div id="legend" class="legend" role="group" aria-label="Advisory level filter">
+    <div class="legend-title">Advice level <span class="legend-hint">(click to filter)</span></div>
+    <!-- rows injected by app.js -->
+  </div>
+</main>
+
+<section id="insets" class="insets">
+  <div class="insets-header">
+    <span>Small destinations &amp; clusters</span>
+    <button id="insets-toggle" class="btn" aria-expanded="false">Show</button>
+  </div>
+  <div id="insets-strip" class="insets-strip collapsed"><!-- mini maps injected --></div>
+</section>
+
+<div id="compare-bar" class="compare-bar" hidden>
+  <span class="compare-bar-label">Comparing:</span>
+  <span id="compare-chips"></span>
+  <button id="compare-open" class="btn btn-primary">Compare</button>
+  <button id="compare-clear" class="btn">Clear</button>
+</div>
+
+<div id="compare-overlay" class="compare-overlay" hidden>
+  <div class="compare-box" role="dialog" aria-label="Country comparison">
+    <button id="compare-close" class="detail-close" aria-label="Close comparison">×</button>
+    <h2>Compare destinations</h2>
+    <div id="compare-table-wrap"></div>
+  </div>
+</div>
+
+<script src="lib/leaflet/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
