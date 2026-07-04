@@ -1,14 +1,13 @@
 """Local development server for the AU Travel Advisory Map.
 
-Serves the single-page front-end and the scraped data, exposes POST /refresh
-to re-run the updater on demand, and re-runs it automatically once a day in a
-background thread.
+Serves the single-page front-end and the scraped data, and re-scrapes
+automatically once a day in a background thread.
 
-LOCAL USE ONLY - do not deploy this publicly. It binds to 127.0.0.1, uses
-Flask's development server, and /refresh is deliberately unauthenticated
-(fine on localhost; an abuse vector on the open internet). The published
-site is static: host web/ plus the JSON data files and run the updaters on
-a schedule instead.
+LOCAL USE ONLY - do not deploy this publicly. It binds to 127.0.0.1 and uses
+Flask's development server. The published site is static: host web/ plus the
+JSON data files and run the updaters on a schedule instead (see the GitHub
+Actions workflow). To re-scrape manually, run the updaters directly:
+python updater/scraper.py  and  python updater/visa_scraper.py.
 
 Run:  python server/app.py   (then open http://localhost:5000)
 """
@@ -62,13 +61,6 @@ def data_files(name):
     return send_from_directory(os.path.join(WEB_DIR, "data"), name, max_age=0)
 
 
-@app.get("/api/ping")
-def ping():
-    # Lets the front-end detect it's running against this local server
-    # (enables the Refresh button, which static hosting can't support).
-    return jsonify({"ok": True, "local": True})
-
-
 @app.get("/api/advisories")
 def advisories():
     return send_from_directory(DATA_DIR, "advisories.json", max_age=0)
@@ -109,17 +101,6 @@ def _do_refresh(force=False):
             return result
         finally:
             _refresh_state["running"] = False
-
-
-@app.post("/refresh")
-def refresh():
-    # Unauthenticated by design: this server only ever binds to 127.0.0.1.
-    # If you expose it beyond localhost, protect or remove this endpoint.
-    if _refresh_state["running"]:
-        return jsonify({"ok": False, "message": "refresh already in progress"}), 409
-    result = _do_refresh()
-    code = 200 if result.get("ok") else 502
-    return jsonify({"ok": result.get("ok", False), "result": result}), code
 
 
 def _last_success_age_hours():

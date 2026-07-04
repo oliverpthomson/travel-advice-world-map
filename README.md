@@ -44,12 +44,12 @@ done. After that, startup is instant.
 - **Daily auto-refresh** — a background thread inside the server re-runs the
   scraper whenever the data is more than 24 hours old (checked every 30 min).
   As long as the server is running, no other scheduling is needed.
-- **Manual refresh** — click **Refresh now** in the top bar (calls
-  `POST /refresh`), or run the updater yourself:
+- **Manual refresh** — run the updaters yourself:
 
   ```powershell
   .venv\Scripts\python updater\scraper.py          # only re-fetches changed pages
   .venv\Scripts\python updater\scraper.py --force  # re-fetches everything
+  .venv\Scripts\python updater\visa_scraper.py     # visa requirements
   ```
 
 - Incremental: a country page is only re-fetched when the index's "Updated"
@@ -144,7 +144,7 @@ updater/
   iso_mapping.py   # destination name -> ISO 3166-1 alpha-3
   build_geo.py     # one-time: slims Natural Earth admin-0 -> web/data/countries.geojson
 server/
-  app.py          # Flask server: static files, /api/*, POST /refresh, daily scheduler
+  app.py          # local dev server: static files, /api/*, daily scheduler
 web/
   index.html, app.js, style.css
   lib/leaflet/    # vendored Leaflet (works offline)
@@ -180,8 +180,8 @@ How it works:
   previously deployed site stays live — last good data always wins.
 - The Natural Earth masters and the scraper's page cache are kept in the
   Actions cache, so daily runs are incremental (~1 request to Smartraveller).
-- On the published site the **Refresh button is hidden** (there's no server
-  to re-scrape on demand); it appears automatically when running locally.
+- To re-scrape the published site on demand, use **Actions → Update data and
+  deploy → Run workflow** (there is no in-page refresh control).
 
 The Flask server in `server/` is for **local use only** — never deploy it.
 

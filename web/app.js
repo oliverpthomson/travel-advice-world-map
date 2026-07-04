@@ -739,7 +739,7 @@ function dismissAlerts() {
   $("alert-banner").hidden = true;
 }
 
-/* ---------------- freshness / refresh ---------------- */
+/* ---------------- freshness ---------------- */
 
 function renderFreshness(statusDoc) {
   const meta = advisories && advisories.meta;
@@ -761,25 +761,6 @@ function renderFreshness(statusDoc) {
     stale.textContent = "⚠ " + problems.join(" ");
     stale.hidden = false;
   } else stale.hidden = true;
-}
-
-async function refreshNow() {
-  const btn = $("refresh-btn");
-  btn.disabled = true;
-  btn.textContent = "Refreshing…";
-  try {
-    const res = await fetch("/refresh", { method: "POST" });
-    const body = await res.json().catch(() => ({}));
-    if (!res.ok && res.status !== 409) {
-      alert("Refresh failed: " + JSON.stringify(body.result && body.result.errors || body));
-    }
-    await loadData(true);
-  } catch (e) {
-    alert("Refresh failed: " + e.message);
-  } finally {
-    btn.disabled = false;
-    btn.textContent = "Refresh";
-  }
 }
 
 /* ---------------- inset mini-maps ---------------- */
@@ -924,12 +905,6 @@ function makeSubregionLayer() {
 }
 
 async function init() {
-  // Show the Refresh button only when the local dev server is answering —
-  // on the published static site there is nothing to POST to.
-  fetch("api/ping", { cache: "no-store" })
-    .then(r => { if (r.ok) $("refresh-btn").hidden = false; })
-    .catch(() => {});
-
   map = L.map("map", {
     minZoom: 1.4, maxZoom: 10, zoomSnap: 0.2, worldCopyJump: true,
     maxBounds: [[-75, -260], [88, 260]], maxBoundsViscosity: 0.5,
@@ -999,7 +974,6 @@ async function init() {
   $("alert-dismiss").addEventListener("click", dismissAlerts);
   $("alert-view-watchlist").addEventListener("click", () =>
     toggleDropPanel("watchlist-panel", "watchlist-toggle", renderWatchlistPanel));
-  $("refresh-btn").addEventListener("click", refreshNow);
   $("mode-advice").addEventListener("click", () => setMode("advice"));
   $("mode-visa").addEventListener("click", () => setMode("visa"));
   $("mode-advice").setAttribute("aria-pressed", String(mode === "advice"));
