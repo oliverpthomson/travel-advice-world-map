@@ -12,6 +12,11 @@
 $repo = Split-Path -Parent $PSScriptRoot
 Set-Location $repo
 
+# Scheduled tasks run with a non-UTF-8 console codepage (cp1252), which makes
+# Python crash when it prints Unicode place names. Force UTF-8 for the child
+# Python processes.
+$env:PYTHONUTF8 = '1'
+
 $py  = Join-Path $repo '.venv\Scripts\python.exe'
 $log = Join-Path $repo 'data\auto_refresh.log'
 

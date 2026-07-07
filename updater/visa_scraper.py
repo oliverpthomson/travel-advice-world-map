@@ -22,6 +22,14 @@ from urllib import robotparser
 sys.path.insert(0, os.path.dirname(__file__))
 from iso_mapping import to_iso3  # noqa: E402
 
+# Log lines contain Unicode place names; make stdout/stderr UTF-8 so a
+# non-UTF-8 console (e.g. a Windows Scheduled Task's cp1252) can't crash us.
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, ValueError):
+        pass
+
 SOURCE_URL = "https://en.wikipedia.org/wiki/Visa_requirements_for_Australian_citizens"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

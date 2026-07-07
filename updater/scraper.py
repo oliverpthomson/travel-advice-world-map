@@ -32,6 +32,14 @@ sys.path.insert(0, os.path.dirname(__file__))
 from iso_mapping import to_iso3  # noqa: E402
 from simplify import simplify_geometry  # noqa: E402
 
+# Log lines contain Unicode place names; make stdout/stderr UTF-8 so a
+# non-UTF-8 console (e.g. a Windows Scheduled Task's cp1252) can't crash us.
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, ValueError):
+        pass
+
 BASE = "https://www.smartraveller.gov.au"
 INDEX_URL = BASE + "/destinations"
 
