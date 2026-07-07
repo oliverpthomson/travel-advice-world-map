@@ -1,6 +1,6 @@
 {
  "meta": {
-  "fetchedAt": "2026-07-04T06:58:58+00:00",
+  "fetchedAt": "2026-07-07T08:19:15+00:00",
   "source": "https://www.smartraveller.gov.au/destinations",
   "attribution": "Travel advice © Commonwealth of Australia (Smartraveller), CC BY 4.0. Unofficial viewer - not endorsed by the Australian Government.",
   "license": "CC BY 4.0",
@@ -12,7 +12,7 @@
    "4": 24,
    "3": 13
   },
-  "pagesFetched": 0,
+  "pagesFetched": 10,
   "errors": [],
   "unmatchedNames": []
  },
@@ -23,11 +23,128 @@
    "region": "Pacific",
    "level": 1,
    "levelLabel": "Exercise normal safety precautions",
-   "updated": "2026-07-03",
+   "updated": "2026-07-07",
    "url": "https://www.smartraveller.gov.au/destinations/pacific/guam",
    "summary": "Exercise normal safety precautions in Guam.",
    "subRegions": [],
-   "latestUpdate": "Typhoon Bavi is expected to impact Guam. The typhoon may bring heavy rain, flash flooding and strong winds. Transport and essential services affected. Check media for updates and follow the instructions of local authorities (see ‘Tropical storms and typhoons’ under 'Safety'). We continue to advise exercise normal safety precautions. Entry requirements for Guam are the same as for the United States of America (see 'Travel')."
+   "latestUpdate": "Super Typhoon Bavi crossed Guam as a category 5 hurricane, bringing heavy rain, violent wind and flooding. There's widespread infrastructure damage and disruption to essential services such as transport, electricity, communications, water and food supplies. Contact your tour operator or airline for information on travel disruptions. Exercise caution, check local media and follow the instructions of local authorities in affected areas (see 'Safety'). We continue to advise exercise normal safety precautions. Entry requirements for Guam are the same as for the United States of America (see 'Travel')."
+  },
+  {
+   "name": "Italy",
+   "iso3": "ITA",
+   "region": "Europe",
+   "level": 1,
+   "levelLabel": "Exercise normal safety precautions",
+   "updated": "2026-07-07",
+   "url": "https://www.smartraveller.gov.au/destinations/europe/italy",
+   "summary": "Exercise normal safety precautions in Italy.",
+   "subRegions": [],
+   "latestUpdate": "Depending on why you're travelling and how long you plan to stay, you may require a visa for travel to the Schengen area. Check the European Entry and Exit (EES) and visa rules before you travel. If you're a dual national of a European country, check whether the EES applies to you and what passport you should enter on. There may be delays at border crossings (see ‘Travel’). Petty crime is common. Be aware of pickpockets and bag snatchers at tourist spots and on transport, particularly at central train stations. Thieves often operate in groups and use distraction techniques, such as staging street performances, to execute their plans. Take care of your belongings (see 'Safety')."
+  },
+  {
+   "name": "Sierra Leone",
+   "iso3": "SLE",
+   "region": "Africa",
+   "level": 2,
+   "levelLabel": "Exercise a high degree of caution",
+   "updated": "2026-07-07",
+   "url": "https://www.smartraveller.gov.au/destinations/africa/sierra-leone",
+   "summary": "Exercise a high degree of caution in Sierra Leone due to the threat of violent crime and the risk of civil unrest.",
+   "subRegions": [],
+   "latestUpdate": "If you're entering or leaving Sierra Leone, you must complete a health declaration before you travel. You may also be subject to health screening on arrival (see 'Travel'). Public protests and demonstrations can occur and may turn violent. Avoid all protests, demonstrations and areas where large gatherings are taking place (see 'Safety'). Australia doesn't have an embassy or consulate in Sierra Leone. The Australian High Commission in Accra currently has very limited capacity to provide consular assistance in Sierra Leone."
+  },
+  {
+   "name": "Spain",
+   "iso3": "ESP",
+   "region": "Europe",
+   "level": 1,
+   "levelLabel": "Exercise normal safety precautions",
+   "updated": "2026-07-07",
+   "url": "https://www.smartraveller.gov.au/destinations/europe/spain",
+   "summary": "Exercise normal safety precautions in Spain.",
+   "subRegions": [],
+   "latestUpdate": "If driving in Spain, your car must have a V16 emergency beacon and reflective jacket. Ensure hire vehicles meet safety and Low Emission Zone (ZBE) requirements and check ZBE compliance before driving or parking in major city centres to avoid fines. Depending on why you're travelling and how long you plan to stay, you may require a visa for travel to the Schengen area. Check the European Entry and Exit (EES) and visa rules before you travel. If you're a dual national of a European country, check whether the EES applies to you and what passport you should enter on. There may be delays at border crossings (see ‘Travel’)."
+  },
+  {
+   "name": "Croatia",
+   "iso3": "HRV",
+   "region": "Europe",
+   "level": 1,
+   "levelLabel": "Exercise normal safety precautions",
+   "updated": "2026-07-07",
+   "url": "https://www.smartraveller.gov.au/destinations/europe/croatia",
+   "summary": "Exercise normal safety precautions in Croatia.",
+   "subRegions": [],
+   "latestUpdate": "Depending on why you're travelling and how long you plan to stay, you may require a visa for travel to the Schengen area. Check the European Entry/Exit (EES) and visa rules before you travel. If you're a dual national of a European country, check whether the EES applies to you and what passport you should enter on. There may be delays at border crossings (see ‘Travel’)."
+  },
+  {
+   "name": "Portugal",
+   "iso3": "PRT",
+   "region": "Europe",
+   "level": 1,
+   "levelLabel": "Exercise normal safety precautions",
+   "updated": "2026-07-07",
+   "url": "https://www.smartraveller.gov.au/destinations/europe/portugal",
+   "summary": "Exercise normal safety precautions in Portugal.",
+   "subRegions": [],
+   "latestUpdate": "Depending on why you're travelling and how long you plan to stay, you may require a visa for travel to the Schengen area. Check the European Entry and Exit (EES) and visa rules before you travel. If you're a dual national of a European country, check whether the EES applies to you and what passport you should enter on. There may be delays at border crossings (see ‘Travel’)."
+  },
+  {
+   "name": "Greece",
+   "iso3": "GRC",
+   "region": "Europe",
+   "level": 1,
+   "levelLabel": "Exercise normal safety precautions",
+   "updated": "2026-07-06",
+   "url": "https://www.smartraveller.gov.au/destinations/europe/greece",
+   "summary": "Exercise normal safety precautions in Greece.",
+   "subRegions": [],
+   "latestUpdate": "Depending on why you're travelling and how long you plan to stay, you may require a visa for travel to the Schengen area. Check the European Entry and Exit (EES) and visa rules before you travel. If you're a dual national of a European country, check whether the EES applies to you and what passport you should enter on. There may be delays at border crossings (see ‘Travel’). Extreme weather can affect many areas of Greece throughout the year, including wildfires in summer and heavy snowfall and flooding in winter. Follow the advice of local authorities (see 'Safety'). Quad bike and motorcycle accidents have caused serious injuries and deaths of Australian visitors to Greece. You need specific travel insurance for quad biking as it’s excluded from many policies. Always read the details of your cover (see ‘Travel’). Public protests, strikes, demonstrations and events that draw large groups of people occur regularly and often with little notice. Protests and strikes can disrupt public transport and see road closures. Follow the advice of local authorities."
+  },
+  {
+   "name": "Haiti",
+   "iso3": "HTI",
+   "region": "Americas",
+   "level": 4,
+   "levelLabel": "Do not travel",
+   "updated": "2026-07-06",
+   "url": "https://www.smartraveller.gov.au/destinations/americas/haiti",
+   "summary": "Do not travel to Haiti due to the dangerous security situation, threat of violent crime, kidnapping and severe shortages of basic necessities including fuel, water and food.",
+   "subRegions": [],
+   "latestUpdate": "We continue to advise do not travel to Haiti. A State of Emergency is in place in the departments of Ouest, Artibonite and Centre in response to gang violence. The security situation remains volatile. Violent crime is common, including murder, armed robbery, kidnapping, assault, sexual assault and carjacking. Air, land and sea borders between Haiti and the Dominican Republic are closed. You're required to spend 21 days in a third country not affected by Ebola if you have travelled from the Democratic Republic of the Congo or Uganda. Airports are open but can be difficult to access due to the highly volatile security situation. You should consider leaving the country if it's safe to do so."
+  },
+  {
+   "name": "Democratic Republic of the Congo",
+   "iso3": "COD",
+   "region": "Africa",
+   "level": 4,
+   "levelLabel": "Do not travel",
+   "updated": "2026-07-06",
+   "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
+   "summary": "Do not travel to the Democratic Republic of the Congo due to the volatile security situation and the threat of terrorism and kidnapping.",
+   "subRegions": [],
+   "latestUpdate": "We continue to advise do not travel to the Democratic Republic of the Congo (DRC) due to the volatile security situation and the threat of conflict, violent protests, terrorism and kidnapping. The DRC is experiencing an Ebola public health emergency. If you travel to the DRC, despite our advice, you may encounter health screening measures on arrival and departure, including passenger locator forms and temperature checks, at airports and border crossings. Some countries have heightened health screenings or restrictions on travellers from the DRC. Check entry requirements for the country you are travelling to or transiting (see 'Health' and 'Travel')."
+  },
+  {
+   "name": "Uganda",
+   "iso3": "UGA",
+   "region": "Africa",
+   "level": 3,
+   "levelLabel": "Reconsider your need to travel",
+   "updated": "2026-07-06",
+   "url": "https://www.smartraveller.gov.au/destinations/africa/uganda",
+   "summary": "Reconsider you need to travel in Uganda overall due to the outbreak of Ebola disease as well as the threat of terrorism and violent crime and the risk of civil unrest.",
+   "subRegions": [
+    {
+     "level": 4,
+     "text": "Do not travel within 50 kilometres of the border with South Sudan due to the serious risk of armed bandits and cross-border attacks by rebel groups."
+    },
+    {
+     "level": 3,
+     "text": "Reconsider your need to travel within 50 kilometres of the border with the Democratic Republic of the Congo due to the risk of banditry and attacks by armed groups. This includes areas North and South of Lake Albert."
+    }
+   ],
+   "latestUpdate": "We advise reconsider your need to travel overall in Uganda due to the outbreak of Ebola disease, as well as the threat of terrorism and violent crime and the risk of civil unrest. Higher levels also apply in some areas. There have been confirmed cases of Marburg virus disease in Kyegegwa District, Western Uganda. If you travel from Uganda, you may be subject to entry restrictions, health screening or quarantine in your transit and travel destinations. Contact your airline directly for the latest updates and check the entry requirements of the destinations you're travelling to or transiting. The border with the Democratic Republic of Congo (DRC) is currently closed (see 'Health' and 'Travel')."
   },
   {
    "name": "Indonesia",
@@ -271,18 +388,6 @@
    "latestUpdate": "A dengue outbreak was declared in June in the south of Efate Island, Shefa Province. Protect yourself against mosquito bites and use insect repellent (see 'Health')."
   },
   {
-   "name": "Croatia",
-   "iso3": "HRV",
-   "region": "Europe",
-   "level": 1,
-   "levelLabel": "Exercise normal safety precautions",
-   "updated": "2026-06-25",
-   "url": "https://www.smartraveller.gov.au/destinations/europe/croatia",
-   "summary": "Exercise normal safety precautions in Croatia.",
-   "subRegions": [],
-   "latestUpdate": "Depending on why you're travelling and how long you plan to stay, you may require a visa for travel to the Schengen area. Check the European Entry/Exit (EES) and visa rules before you travel. If you're a dual national of a European country, check whether the EES applies to you and what passport you should enter on. There may be delays at border crossings (see ‘Travel’)."
-  },
-  {
    "name": "Mauritius",
    "iso3": "MUS",
    "region": "Africa",
@@ -506,27 +611,6 @@
    "latestUpdate": "We've reviewed our advice for Nicaragua and continue to advise exercise a high degree of caution due to the threat of violent crime. Check with the nearest embassy or consulate of Nicaragua to confirm the latest entry requirements before travel (see 'Travel')."
   },
   {
-   "name": "Uganda",
-   "iso3": "UGA",
-   "region": "Africa",
-   "level": 3,
-   "levelLabel": "Reconsider your need to travel",
-   "updated": "2026-06-19",
-   "url": "https://www.smartraveller.gov.au/destinations/africa/uganda",
-   "summary": "Reconsider you need to travel in Uganda overall due to the outbreak of Ebola disease as well as the threat of terrorism and violent crime and the risk of civil unrest.",
-   "subRegions": [
-    {
-     "level": 4,
-     "text": "Do not travel within 50 kilometres of the border with South Sudan due to the serious risk of armed bandits and cross-border attacks by rebel groups."
-    },
-    {
-     "level": 3,
-     "text": "Reconsider your need to travel within 50 kilometres of the border with the Democratic Republic of the Congo due to the risk of banditry and attacks by armed groups. This includes areas North and South of Lake Albert."
-    }
-   ],
-   "latestUpdate": "We've reviewed our advice for Uganda and have raised the overall travel advice level. We now advise reconsider your need to travel overall due to the outbreak of Ebola disease. The risks of terrorism, violent crime and civil unrest remain. Higher levels also apply in some areas. The Bundibugyo strain of Ebola has no approved vaccines or specific antiviral treatments (see 'Health'). If you're travelling from Uganda, you may be subject to entry restrictions, health screening or quarantine in your transit and travel destinations. Contact your airline directly for the latest updates and check the entry requirements of the destinations you're travelling to or transiting. The border with the Democratic Republic of Congo (DRC) is currently closed (see 'Travel'). During periods of political tension, local authorities may increase security measures, restrict movement and impose curfews with little notice. Avoid large gatherings, monitor local media and follow the advice of authorities (see 'Safety')."
-  },
-  {
    "name": "Somalia",
    "iso3": "SOM",
    "region": "Africa",
@@ -537,18 +621,6 @@
    "summary": "Do not travel to Somalia due to the dangerous security situation and the threat of armed conflict, terrorism, kidnapping and violent crime.",
    "subRegions": [],
    "latestUpdate": "We continue to advise do not travel to Somalia. If you decide to remain, you're responsible for your own safety. Our ability to provide consular services in Somalia is extremely limited. Terrorist attacks occur frequently. The UK and US Embassies in Somalia issue frequent security alerts about potential imminent terrorist attacks (see 'Safety')."
-  },
-  {
-   "name": "Greece",
-   "iso3": "GRC",
-   "region": "Europe",
-   "level": 1,
-   "levelLabel": "Exercise normal safety precautions",
-   "updated": "2026-06-17",
-   "url": "https://www.smartraveller.gov.au/destinations/europe/greece",
-   "summary": "Exercise normal safety precautions in Greece.",
-   "subRegions": [],
-   "latestUpdate": "Depending on why you're travelling and how long you plan to stay, you may require a visa for travel to the Schengen area. Check the European Entry and Exit (EES) and visa rules before you travel. If you're a dual national of a European country, check whether the EES applies to you and what passport you should enter on. There may be delays at border crossings (see ‘Travel’). Extreme weather can affect many areas of Greece throughout the year, including wildfires in summer and heavy snowfall and flooding in winter. Follow the advice of local authorities (see 'Safety'). Quad bike and motorcycle accidents have caused serious injuries and deaths of Australian visitors to Greece. You need specific travel insurance for quad biking as it’s excluded from many policies. Always read the details of your cover (see ‘Travel’). Public protests, strikes, demonstrations and events that draw large groups of people occur regularly and often with little notice. Protests and strikes can disrupt public transport and see road closures. Follow the advice of local authorities."
   },
   {
    "name": "Iran",
@@ -1345,18 +1417,6 @@
    "latestUpdate": "We continue to advise do not travel to South Sudan, including Juba, due to the dangerous security situation and the threat of violence and armed conflict. The security situation is volatile and could deteriorate rapidly with little or no warning. If you’re in South Sudan despite our advice, leave when it's safe to do so. If the security situation deteriorates further, you may be unable to leave for an extended period. Airports and borders may close suddenly. Our ability to provide consular services in South Sudan is extremely limited. The Australian Government may not be able to assist you to leave (see 'Safety')."
   },
   {
-   "name": "Democratic Republic of the Congo",
-   "iso3": "COD",
-   "region": "Africa",
-   "level": 4,
-   "levelLabel": "Do not travel",
-   "updated": "2026-05-22",
-   "url": "https://www.smartraveller.gov.au/destinations/africa/democratic-republic-congo",
-   "summary": "Do not travel to the Democratic Republic of the Congo due to the volatile security situation and the threat of terrorism and kidnapping.",
-   "subRegions": [],
-   "latestUpdate": "The World Health Organisation (WHO) has declared the Ebola outbreak in the Democratic Republic of the Congo (DRC) a public health emergency. The Bundibugyo strain of Ebola has no approved vaccines or specific antiviral treatments. Maintain strict hygiene standards and avoid physical contact with anyone displaying symptoms (see ‘Health’). We continue to advise do not travel to the DRC due to the volatile security situation and the threat of conflict, violent protests, terrorism and kidnapping. Violent demonstrations and protests may occur in Kinshasa and other locations (see 'Safety')."
-  },
-  {
    "name": "Uruguay",
    "iso3": "URY",
    "region": "Americas",
@@ -1531,18 +1591,6 @@
    "latestUpdate": "We advise exercise a high degree of caution in Senegal. Protests in Senegal can turn violent, resulting in several deaths and injuries. Avoid protests and public gatherings, limit unnecessary travel and remain vigilant (see 'Safety'). The Australian High Commission in Accra has very limited capacity to provide consular assistance in Senegal."
   },
   {
-   "name": "Spain",
-   "iso3": "ESP",
-   "region": "Europe",
-   "level": 1,
-   "levelLabel": "Exercise normal safety precautions",
-   "updated": "2026-05-05",
-   "url": "https://www.smartraveller.gov.au/destinations/europe/spain",
-   "summary": "Exercise normal safety precautions in Spain.",
-   "subRegions": [],
-   "latestUpdate": "If driving in Spain, your car must have a V16 emergency beacon and reflective jacket. Ensure hire vehicles meet safety and Low Emission Zone (ZBE) requirements and check ZBE compliance before driving or parking in major city centres to avoid fines. Depending on why you're travelling and how long you plan to stay, you may require a visa for travel to the Schengen area. Check the European Entry and Exit (EES) and visa rules before you travel. If you're a dual national of a European country, check whether the EES applies to you and what passport you should enter on. There may be delays at border crossings (see ‘Travel’)."
-  },
-  {
    "name": "Federated States of Micronesia",
    "iso3": "FSM",
    "region": "Pacific",
@@ -1680,18 +1728,6 @@
    "latestUpdate": "Depending on why you're travelling and how long you plan to stay, you may require a visa for travel to the Schengen area. Check the European Entry and Exit (EES) and visa rules before you travel. If you're a dual national of a European country, check whether the EES applies to you and what passport you should enter on. There may be delays at border crossings (see ‘Travel’). There's an ongoing threat of terrorism in Austria. There have been terrorist attacks and arrests relating to planned attacks. Be vigilant in public places and follow the advice of local authorities. Report anything suspicious to the police (see 'Safety')."
   },
   {
-   "name": "Italy",
-   "iso3": "ITA",
-   "region": "Europe",
-   "level": 1,
-   "levelLabel": "Exercise normal safety precautions",
-   "updated": "2026-04-14",
-   "url": "https://www.smartraveller.gov.au/destinations/europe/italy",
-   "summary": "Exercise normal safety precautions in Italy.",
-   "subRegions": [],
-   "latestUpdate": "Depending on why you're travelling and how long you plan to stay, you may require a visa for travel to the Schengen area. Check the European Entry and Exit (EES) and visa rules before you travel. If you're a dual national of a European country, check whether the EES applies to you and what passport you should enter on. There may be delays at border crossings (see ‘Travel’). Petty crime is common. Be aware of pickpockets and bag snatchers at tourist spots and on transport, particularly at central train stations. Thieves often operate in groups and use distraction techniques, such as staging street performances, to execute their plans. Take care of your belongings (see 'Safety')."
-  },
-  {
    "name": "Lithuania",
    "iso3": "LTU",
    "region": "Europe",
@@ -1796,18 +1832,6 @@
    "updated": "2026-04-14",
    "url": "https://www.smartraveller.gov.au/destinations/europe/poland",
    "summary": "Exercise normal safety precautions in Poland.",
-   "subRegions": [],
-   "latestUpdate": "Depending on why you're travelling and how long you plan to stay, you may require a visa for travel to the Schengen area. Check the European Entry and Exit (EES) and visa rules before you travel. If you're a dual national of a European country, check whether the EES applies to you and what passport you should enter on. There may be delays at border crossings (see ‘Travel’)."
-  },
-  {
-   "name": "Portugal",
-   "iso3": "PRT",
-   "region": "Europe",
-   "level": 1,
-   "levelLabel": "Exercise normal safety precautions",
-   "updated": "2026-04-14",
-   "url": "https://www.smartraveller.gov.au/destinations/europe/portugal",
-   "summary": "Exercise normal safety precautions in Portugal.",
    "subRegions": [],
    "latestUpdate": "Depending on why you're travelling and how long you plan to stay, you may require a visa for travel to the Schengen area. Check the European Entry and Exit (EES) and visa rules before you travel. If you're a dual national of a European country, check whether the EES applies to you and what passport you should enter on. There may be delays at border crossings (see ‘Travel’)."
   },
@@ -2068,18 +2092,6 @@
    "latestUpdate": "We continue to advise do not travel to Ukraine due to the volatile security environment and ongoing military conflict. Leave Ukraine as soon as possible, if it's safe to do so. The security situation could deteriorate with little warning, posing a serious risk to life. The Russian invasion of Ukraine is ongoing. Heavy fighting is occurring in parts of eastern and southern Ukraine. Missile and drone strikes continue across the country, including in major cities. The Australian Embassy in Kyiv cannot provide you with advance warning of when Russian attacks may occur. Follow the advice of local authorities. Significant damage has occurred to civilian infrastructure, including residential areas, energy, rail and industrial facilities. Extended blackouts are occurring across the country, impacting heating and water supplies. There have been many casualties. Foreigners have been killed and may be targeted. Large amounts of unexploded ordnance and landmines are present in conflict and post-conflict areas. Prioritise your safety, monitor events and follow local advice. If you remain in Ukraine, be prepared to shelter in place for extended periods. Make sure you have supplies of water, food and medication. Make sure you know where the closest bomb shelter is. You're responsible for your own safety, and that of your family (see 'Safety'). Our ability to provide consular assistance in Ukraine is severely limited. The Australian Embassy is not able to provide in-person consular or passport services. If you have significant concerns for your welfare or that of another Australian, contact the Consular Emergency Centre on 1300 555 135 in Australia or +61 2 6261 3305 outside Australia (see 'Consular contacts')."
   },
   {
-   "name": "Haiti",
-   "iso3": "HTI",
-   "region": "Americas",
-   "level": 4,
-   "levelLabel": "Do not travel",
-   "updated": "2026-02-26",
-   "url": "https://www.smartraveller.gov.au/destinations/americas/haiti",
-   "summary": "Do not travel to Haiti due to the dangerous security situation, threat of violent crime, kidnapping and severe shortages of basic necessities including fuel, water and food.",
-   "subRegions": [],
-   "latestUpdate": "We continue to advise do not travel to Haiti. A State of Emergency is in place in the departments of Ouest, Artibonite and Centre in response to gang violence. The security situation remains volatile. Violent crime is common, including murder, armed robbery, kidnapping, assault, sexual assault and carjacking. Air, land and sea borders between Haiti and the Dominican Republic are closed. Airports are open but can be difficult to access due to the highly volatile security situation. You should consider leaving the country if it's safe to do so."
-  },
-  {
    "name": "Dominican Republic",
    "iso3": "DOM",
    "region": "Americas",
@@ -2265,18 +2277,6 @@
    "summary": "Exercise normal safety precautions in New Zealand.",
    "subRegions": [],
    "latestUpdate": "We continue to advise exercise normal safety precautions for New Zealand. You must complete a New Zealand Traveller Declaration Form (NZTD) before passport control on arrival (see 'Travel')."
-  },
-  {
-   "name": "Sierra Leone",
-   "iso3": "SLE",
-   "region": "Africa",
-   "level": 2,
-   "levelLabel": "Exercise a high degree of caution",
-   "updated": "2026-01-27",
-   "url": "https://www.smartraveller.gov.au/destinations/africa/sierra-leone",
-   "summary": "Exercise a high degree of caution in Sierra Leone due to the threat of violent crime and the risk of civil unrest.",
-   "subRegions": [],
-   "latestUpdate": "We continue to advise exercise a high degree of caution in Sierra Leone. Additional health screening measures are in place due to an increase in Mpox cases in Sierra Leone. Measures include temperature checks on arrival into and while travelling in Sierra Leone (see 'Health'). Public protests and demonstrations can turn violent with little or no warning. Avoid all protests, demonstrations and areas where large gatherings are taking place. (see 'Safety'). The Australian High Commission in Accra currently has very limited capacity to provide consular assistance in Sierra Leone."
   },
   {
    "name": "Ghana",
