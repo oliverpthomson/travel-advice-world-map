@@ -21,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history so the data-commit step can rebase/push
 
       - uses: actions/setup-python@v5
         with:
@@ -50,14 +52,21 @@ jobs:
       - name: Build countries.geojson
         run: python updater/build_geo.py
 
-      # If a scrape fails, the step fails, nothing is committed and the
-      # previous deployment stays live - last good data always wins.
+      # Scraping is best-effort: Smartraveller's CDN read-times-out on cloud
+      # (GitHub Actions) IPs, so these steps may fail here even though they
+      # work from a home IP. continue-on-error keeps the job going so the
+      # site still deploys from the committed data - last good data wins.
+      # The failed step shows as a warning in the Actions UI. To refresh the
+      # data reliably, run the updaters locally and push (or let the local
+      # server's daily scheduler do it), then this workflow redeploys.
       - name: Scrape advisories
+        continue-on-error: true
         env:
           SCRAPER_CONTACT: ${{ secrets.SCRAPER_CONTACT }}
         run: python updater/scraper.py
 
       - name: Scrape visa requirements
+        continue-on-error: true
         env:
           SCRAPER_CONTACT: ${{ secrets.SCRAPER_CONTACT }}
         run: python updater/visa_scraper.py
