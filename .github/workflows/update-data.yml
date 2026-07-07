@@ -52,19 +52,17 @@ jobs:
       - name: Build countries.geojson
         run: python updater/build_geo.py
 
-      # Scraping is best-effort: Smartraveller's CDN read-times-out on cloud
-      # (GitHub Actions) IPs, so these steps may fail here even though they
-      # work from a home IP. continue-on-error keeps the job going so the
-      # site still deploys from the committed data - last good data wins.
-      # The failed step shows as a warning in the Actions UI. To refresh the
-      # data reliably, run the updaters locally and push (or let the local
-      # server's daily scheduler do it), then this workflow redeploys.
-      - name: Scrape advisories
-        continue-on-error: true
-        env:
-          SCRAPER_CONTACT: ${{ secrets.SCRAPER_CONTACT }}
-        run: python updater/scraper.py
-
+      # NOTE: the advisory scraper is intentionally NOT run here. Smartraveller's
+      # CDN read-times-out on cloud (GitHub Actions) IPs, so it can only fail -
+      # and a failed run would overwrite status.json with ok=false, which the
+      # UI would surface as a misleading "refresh failed" banner even though the
+      # deployed advisory data is fine. Advisory data is refreshed by the local
+      # Scheduled Task (updater/auto_refresh.ps1) from a residential IP, which
+      # pushes and triggers this workflow to redeploy.
+      #
+      # Only the visa scraper runs here (Wikipedia serves cloud IPs fine), so
+      # visa data stays fresh even when the local machine is off. It is
+      # best-effort: a transient failure keeps the last-good visas.json.
       - name: Scrape visa requirements
         continue-on-error: true
         env:
@@ -75,12 +73,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/advisories.json data/visas.json data/history.json data/status.json \
-                  web/data/countries.geojson web/data/subregions.geojson
+          # status.json is deliberately NOT staged: it reflects advisory-scrape
+          # health, which is only meaningful from the local (residential) run.
+          git add data/visas.json web/data/countries.geojson
           if git diff --cached --quiet; then
             echo "no data changes"
           else
-            git commit -m "data: scheduled refresh"
+            git commit -m "data: scheduled visa refresh"
             git pull --rebase origin main
             git push
           fi
