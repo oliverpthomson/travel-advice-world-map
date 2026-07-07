@@ -41,9 +41,24 @@ done. After that, startup is instant.
 
 ## How the data stays fresh
 
-- **Daily auto-refresh** — a background thread inside the server re-runs the
-  scraper whenever the data is more than 24 hours old (checked every 30 min).
-  As long as the server is running, no other scheduling is needed.
+- **Published site — daily local Scheduled Task.** Smartraveller's CDN
+  read-times-out on cloud (GitHub Actions) IPs, so advisory data can only be
+  scraped from a normal residential connection. `updater\auto_refresh.ps1`
+  scrapes both sources and pushes any changes (which redeploys the site);
+  register it to run daily with:
+
+  ```powershell
+  powershell -ExecutionPolicy Bypass -File updater\register_task.ps1
+  ```
+
+  It runs as you, when logged on, at 08:00 daily, using the git credentials in
+  Windows Credential Manager. Logs to `data\auto_refresh.log`. Remove it with
+  `Unregister-ScheduledTask -TaskName 'AU Travel Advisory Map refresh'`.
+  (The GitHub Actions workflow still runs daily too — it refreshes the
+  Wikipedia visa data, which *does* work from the cloud, and redeploys.)
+- **Local dev auto-refresh** — a background thread inside the server re-runs
+  the scraper whenever the data is more than 24 hours old (checked every
+  30 min). As long as the server is running, no other scheduling is needed.
 - **Manual refresh** — run the updaters yourself:
 
   ```powershell

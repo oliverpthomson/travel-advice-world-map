@@ -13,6 +13,7 @@ data/geo/
 data/updater_state.json
 data/advisories.prev.json
 data/cache/
+data/auto_refresh.log
 
 # The published outputs stay tracked:
 #   data/advisories.json, data/visas.json, data/history.json, data/status.json
