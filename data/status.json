@@ -1,13 +1,8 @@
 {
- "lastRunAt": "2026-07-07T08:57:20+00:00",
- "ok": true,
- "errors": [],
- "unmatched": [],
- "subregionShading": {
-  "matched": 149,
-  "countries": 38
- },
- "lastSuccessAt": "2026-07-07T08:57:21+00:00",
- "destinationCount": 179,
- "pagesFetched": 0
+ "lastRunAt": "2026-07-07T08:57:38+00:00",
+ "ok": false,
+ "errors": [
+  "index fetch/parse: HTTPSConnectionPool(host='www.smartraveller.gov.au', port=443): Read timed out. (read timeout=40)"
+ ],
+ "unmatched": []
 }
