@@ -1,6 +1,6 @@
 {
  "meta": {
-  "fetchedAt": "2026-07-08T07:46:09+00:00",
+  "fetchedAt": "2026-07-10T03:17:18+00:00",
   "source": "https://www.smartraveller.gov.au/destinations",
   "attribution": "Travel advice © Commonwealth of Australia (Smartraveller), CC BY 4.0. Unofficial viewer - not endorsed by the Australian Government.",
   "license": "CC BY 4.0",
@@ -9,14 +9,162 @@
   "levelCounts": {
    "2": 77,
    "1": 65,
-   "4": 24,
-   "3": 13
+   "3": 13,
+   "4": 24
   },
-  "pagesFetched": 1,
+  "pagesFetched": 10,
   "errors": [],
   "unmatchedNames": []
  },
  "countries": [
+  {
+   "name": "Jordan",
+   "iso3": "JOR",
+   "region": "Middle East",
+   "level": 2,
+   "levelLabel": "Exercise a high degree of caution",
+   "updated": "2026-07-10",
+   "url": "https://www.smartraveller.gov.au/destinations/middle-east/jordan",
+   "summary": "Exercise a high degree of caution in Jordan overall due to the threat of terrorism and the unpredictable security situation in the region.",
+   "subRegions": [
+    {
+     "level": 3,
+     "text": "Reconsider your need to travel to the Syrian and Iraqi border regions due to the unstable security situation."
+    }
+   ],
+   "latestUpdate": "We continue to advise exercise a high degree of caution in Jordan due to the threat of terrorism and the unpredictable security situation in the region. Higher levels apply in some areas. There remains a risk of renewed military action. Avoid government, military or energy infrastructure locations. If warned of an imminent attack, move to an enclosed shelter, ideally underground or close to ground level if available. If these are not available, seek an inner room without windows. Prioritise your safety, monitor developments and follow the advice of local authorities. Jordanian airspace may result in airspace closures, flight cancellations and other travel disruptions at short notice. Check with your airline or tour operator before travel. Terrorism is a threat, including in Jordan. Terrorist attacks could happen at any time or anywhere. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. Maintain a high level of security awareness. If there's a security incident, follow the advice of local authorities (see 'Safety'). If you're visiting Jordan on an e-Visa, a single visa is valid for 90 days. All visitors are required to register their residency details with the Immigration official on arrival, regardless of how long you are planning to stay in Jordan (see 'Travel')."
+  },
+  {
+   "name": "Taiwan",
+   "iso3": "TWN",
+   "region": "Asia",
+   "level": 1,
+   "levelLabel": "Exercise normal safety precautions",
+   "updated": "2026-07-10",
+   "url": "https://www.smartraveller.gov.au/destinations/asia/taiwan",
+   "summary": "Exercise normal safety precautions in Taiwan.",
+   "subRegions": [],
+   "latestUpdate": "The Australian Office Taipei will be closed on Friday 10 July. Typhoon Bavi is expected to impact Taiwan from 10 to 11 July. High winds, heavy rain and storm surges are expected. Disruptions to essential services and transport may occur. Contact your travel provider or airline for the latest information on travel disruptions. Monitor local media and follow the instructions of the local authorities (see 'Safety'). You must complete a Taiwan Arrival Card (TWAC) within three days before you arrive in Taiwan. Check the TWAC website for information on how to complete and submit the TWAC online (see 'Travel')."
+  },
+  {
+   "name": "Oman",
+   "iso3": "OMN",
+   "region": "Middle East",
+   "level": 2,
+   "levelLabel": "Exercise a high degree of caution",
+   "updated": "2026-07-09",
+   "url": "https://www.smartraveller.gov.au/destinations/middle-east/oman",
+   "summary": "Exercise a high degree of caution in Oman due to the unpredictable security situation in the region.",
+   "subRegions": [],
+   "latestUpdate": "We continue to advise exercise a high degree of caution to Oman due to the unpredictable security situation in the region. Higher levels apply in some areas. Be prepared for extreme weather conditions. The monsoon season is from June to September. Temperatures can reach 50°C. Flooding and cyclones can happen during this time. Sand and dust storms can occur during the drier months from October to May."
+  },
+  {
+   "name": "Bahrain",
+   "iso3": "BHR",
+   "region": "Middle East",
+   "level": 3,
+   "levelLabel": "Reconsider your need to travel",
+   "updated": "2026-07-09",
+   "url": "https://www.smartraveller.gov.au/destinations/middle-east/bahrain",
+   "summary": "Reconsider your need to travel due to the volatile security situation in the region.",
+   "subRegions": [],
+   "latestUpdate": "We continue to advise reconsider your need to travel to Bahrain due to the unpredictable security situation in Bahrain and the region. There remains a risk of military action. If this happens, prioritise your safety. Follow local warning systems and, if warned of an imminent attack, move to an enclosed hardened shelter. If these are not available, seek an inner room without windows. Monitor developments closely and follow advice of local authorities. Military conflict in the region may cause travel disruptions including airspace closures and flight cancellations. Check the status of any border crossing before you travel by air, land or sea. Terrorism is a threat, including in Bahrain. Terrorist attacks could happen at any time or anywhere. Maintain a high level of security awareness. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. If there's a security incident, follow the advice of local authorities (see 'Safety')."
+  },
+  {
+   "name": "Saudi Arabia",
+   "iso3": "SAU",
+   "region": "Middle East",
+   "level": 2,
+   "levelLabel": "Exercise a high degree of caution",
+   "updated": "2026-07-09",
+   "url": "https://www.smartraveller.gov.au/destinations/middle-east/saudi-arabia",
+   "summary": "Exercise a high degree of caution overall due to the unpredictable security situation in the region.",
+   "subRegions": [
+    {
+     "level": 4,
+     "text": "Do not travel to areas within 30km of the border with Yemen due to ongoing conflict in Yemen."
+    },
+    {
+     "level": 3,
+     "text": "Reconsider your need to travel between 30km and 80km of the border with Yemen due to the threat of missile and drone attacks."
+    }
+   ],
+   "latestUpdate": "We continue to advise exercise a high degree of caution in Saudi Arabia due to the threat of terrorism and the unpredictable security situation in the region. Higher levels apply in some areas. There remains a risk of renewed military action which may cause travel disruptions including airspace closures and flight cancellations. Prioritise your safety, monitor events and follow local advice. If warned of an imminent attack, move to an enclosed shelter. If these are not available, seek an inner room without windows. Terrorism is a threat, including in Saudi Arabia. Terrorist attacks could happen at any time or anywhere. Maintain a high level of security awareness. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. If there's a security incident, follow the advice of local authorities (see 'Safety')."
+  },
+  {
+   "name": "Israel",
+   "iso3": "ISR",
+   "region": "Middle East",
+   "level": 3,
+   "levelLabel": "Reconsider your need to travel",
+   "updated": "2026-07-09",
+   "url": "https://www.smartraveller.gov.au/destinations/middle-east/israel",
+   "summary": "Reconsider your need to travel to Israel overall due to the unpredictable security situation in Israel and the region.",
+   "subRegions": [
+    {
+     "level": 4,
+     "text": "Do not travel to border areas with Gaza (Palestine) due to armed conflict."
+    },
+    {
+     "level": 4,
+     "text": "Do not travel to border areas with Lebanon and Syria due to the volatile security situation."
+    }
+   ],
+   "latestUpdate": "We continue to advise reconsider your need to travel overall due to the unpredictable security situation in Israel and the region. We also advise do not travel to border areas with Gaza (Palestine), Lebanon and Syria. There remains a risk of military action. If this happens, prioritise your safety. Follow warnings from local authorities to avoid areas deemed to be at high risk of targeting. If warned of an imminent attack, move to an enclosed hardened shelter. If these are not available, seek an inner room without windows. Stay aware of your environment. Monitor public safety updates through the National Emergency Portal (accessible only in Israel). Military conflict in the region may cause travel disruptions including airspace closures and flight cancellations. The local security situation could deteriorate with little or no notice. Check the status of any border crossing before you travel by air, land or sea. If you intend to travel by land into a neighbouring country, check the latest public information from local authorities on entry requirements and border arrangements, including opening times. Border crossing points may be closed without notice (see 'Travel'). Israel has a naval blockade in place along the coast of Gaza (Palestine). Don't join others seeking to break the blockade. Previous attempts to break the blockade have resulted in death, injury, arrest or deportation of foreigners. Terrorism is a threat, including in Israel. Maintain a high level of security awareness. If there's a security incident, follow the advice of local authorities. Terror attacks can occur anywhere at any time, including by lone actors. Be alert to personal safety risks. There continues to be a very high threat of military and terrorist attacks against Israel, Israeli and Jewish interests across the region (see 'Safety)."
+  },
+  {
+   "name": "Belarus",
+   "iso3": "BLR",
+   "region": "Europe",
+   "level": 4,
+   "levelLabel": "Do not travel",
+   "updated": "2026-07-09",
+   "url": "https://www.smartraveller.gov.au/destinations/europe/belarus",
+   "summary": "Do not travel to Belarus due to the volatile security environment caused by Russia’s war in neighbouring Ukraine, Russia's military presence along the Belarus border with Ukraine and the arbitrary enforcement of laws by Belarusian authorities.",
+   "subRegions": [
+    {
+     "level": 4,
+     "text": "Do not travel near the borders of Latvia, Lithuania, Poland and Russia unless exiting Belarus via a border crossing due to the volatile security environment and potential border closures/restrictions on movement. The border with Ukraine is closed."
+    }
+   ],
+   "latestUpdate": "We continue to advise do not travel to Belarus. The security environment continues to be volatile and could deteriorate at short notice. Despite the release of some high profile political prisoners, Belarus continues to impose strong penalties for very broadly defined and arbitrarily enforced offences such as 'terrorism propaganda' and 'discrediting' the Belarusian government, security forces and military organisations. Penalties may be severe, including the death penalty for ‘high treason’. Belarus doesn't recognise dual nationality. If you enter Belarus with a Belarusian passport, local authorities will treat you as a Belarusian national even if you're a dual national. This severely limits the consular services we can give if you're arrested or detained. Belarusians can't obtain or renew travel documents abroad. Dual citizens are at risk when renewing travel documents in Belarus and should obtain independent legal advice before travelling to or entering Belarus. If Belarusian authorities consider you a Belarusian citizen, including through dual nationality or a residence permit, you may be subject to compulsory military service or mobilisation up to age 27. The Australian Government may be unable to assist (see 'Local laws'). If you're in Belarus, leave immediately using the limited commercial options available or private means. Review your personal security plans and carefully consider the safest means and route to depart. You're responsible for your safety and that of your family. Don't attempt to travel to the Belarus-Ukraine border or cross into Ukraine from Belarus. The Australian government can't evacuate you from Belarus."
+  },
+  {
+   "name": "Kuwait",
+   "iso3": "KWT",
+   "region": "Middle East",
+   "level": 3,
+   "levelLabel": "Reconsider your need to travel",
+   "updated": "2026-07-09",
+   "url": "https://www.smartraveller.gov.au/destinations/middle-east/kuwait",
+   "summary": "Reconsider your need to travel to Kuwait due to the unpredictable security situation in Kuwait and the region.",
+   "subRegions": [],
+   "latestUpdate": "We continue to advise reconsider your need to travel due to the unpredictable security situation in Kuwait and the region. There remains a risk of military action. If this happens, prioritise your safety. Follow local warning systems and, if warned of an imminent attack, move to an enclosed hardened shelter. If these are not available, seek an inner room without windows. Monitor developments closely and follow local authorities’ advice. Stay aware of your environment. Military conflict in the region may cause travel disruptions including airspace closures and flight cancellations. Check with your airline or tour operator before travel. Check the status of any border crossing before you travel by air, land or sea. Changes may occur with limited or no notice. Australians require a visa to enter Kuwait. Australian citizens are eligible to obtain an e-visa or visa on arrival at Kuwaiti ports of entry. You should apply for an e-visa at the Ministry of Interior’s website prior to departure. Possession of an e-visa does not guarantee you will be permitted entry to Kuwait. You may be subject to further scrutiny and background checks upon arrival in Kuwait based upon your place of birth or background. If you believe you may be subject to entry restrictions upon arrival, contact the Kuwait Embassy in Australia prior to travel. Terrorism is a threat, including in Kuwait. Terrorist attacks could happen at any time or anywhere. Maintain a high level of security awareness. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. If there's a security incident, follow the advice of local authorities (see ‘Safety’)."
+  },
+  {
+   "name": "Qatar",
+   "iso3": "QAT",
+   "region": "Middle East",
+   "level": 3,
+   "levelLabel": "Reconsider your need to travel",
+   "updated": "2026-07-09",
+   "url": "https://www.smartraveller.gov.au/destinations/middle-east/qatar",
+   "summary": "Reconsider your need to travel to Qatar due to the unpredictable security situation in Qatar and the region.",
+   "subRegions": [],
+   "latestUpdate": "We continue to advise reconsider your need to travel due to the unpredictable security situation in Qatar and the Middle East region. There remains a risk of military action. If this happens, prioritise your safety. Follow local warning systems and, if warned of an imminent attack, move to an enclosed hardened shelter. If these are not available, seek an inner room without windows. Monitor developments closely and follow the advice of local authorities. Stay aware of your environment. Qatar airspace may open or close at short notice, impacting flights at Doha's international airport. Check the status of any border crossing before you travel by air, land or sea. Terrorism is a threat, including in Qatar. Terrorist attacks could happen at any time or anywhere. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. Maintain a high level of security awareness. If there's a security incident, follow the advice of local authorities. (see 'Safety')."
+  },
+  {
+   "name": "United Arab Emirates",
+   "iso3": "ARE",
+   "region": "Middle East",
+   "level": 3,
+   "levelLabel": "Reconsider your need to travel",
+   "updated": "2026-07-09",
+   "url": "https://www.smartraveller.gov.au/destinations/middle-east/united-arab-emirates",
+   "summary": "Reconsider your need to travel due to the unpredictable security situation in the UAE and the region.",
+   "subRegions": [],
+   "latestUpdate": "We continue to advise reconsider your need to travel due to the unpredictable security situation in the UAE and the region. There remains a risk of military action. If this happens, prioritise your safety. Follow local warning systems and, if warned of an imminent attack, move to an enclosed hardened shelter. If these are not available, seek an inner room without windows. Monitor developments closely and follow the advice of local authorities. Stay aware of your environment. Military conflict in the region may cause travel disruptions. UAE airspace may open or close at short notice, impacting flights at Abu Dhabi and Dubai International Airports. Check the status of any border crossing before you travel by air, land or sea. Terrorism is a threat, including in the UAE. Terrorist attacks could happen at any time or anywhere. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. If there's a security incident, follow the advice of local authorities (see 'Safety')."
+  },
   {
    "name": "France",
    "iso3": "FRA",
@@ -176,27 +324,6 @@
    "latestUpdate": "Before arriving in Indonesia at international entry points (by plane or boat), you’ll need to complete an arrival card and apply for an e-Visa on Arrival (e-VOA). Both can be completed on the All Indonesia website. Make sure you understand your visa conditions, entry and exit requirements. Ensure you have the right visa for your trip. It's illegal to work, conduct research or volunteer if you're on a tourist visa. This includes creating or posting online content for payment or commercial purposes (see ‘Travel’). Be careful with drinks. Some drinks may be spiked or contain dangerous substances like methanol. Don’t leave your food or drinks unattended. There have been cases of methanol poisoning, including in Bali and Lombok (see 'Safety')."
   },
   {
-   "name": "Saudi Arabia",
-   "iso3": "SAU",
-   "region": "Middle East",
-   "level": 2,
-   "levelLabel": "Exercise a high degree of caution",
-   "updated": "2026-07-02",
-   "url": "https://www.smartraveller.gov.au/destinations/middle-east/saudi-arabia",
-   "summary": "Exercise a high degree of caution overall due to the unpredictable security situation in the region.",
-   "subRegions": [
-    {
-     "level": 4,
-     "text": "Do not travel to areas within 30km of the border with Yemen due to ongoing conflict in Yemen."
-    },
-    {
-     "level": 3,
-     "text": "Reconsider your need to travel between 30km and 80km of the border with Yemen due to the threat of missile and drone attacks."
-    }
-   ],
-   "latestUpdate": "We've reviewed our advice and have lowered the overall travel advice level. We now advise exercise a high degree of caution in Saudi Arabia due to the threat of terrorism and the unpredictable security situation in the region. Higher levels apply in some areas. There remains a risk of renewed military action which may cause travel disruptions including airspace closures and flight cancellations. Prioritise your safety, monitor events and follow local advice. Terrorism is a threat, including in Saudi Arabia. Terrorist attacks could happen at any time or anywhere. Maintain a high level of security awareness. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. If there's a security incident, follow the advice of local authorities (see 'Safety')."
-  },
-  {
    "name": "South Africa",
    "iso3": "ZAF",
    "region": "Africa",
@@ -319,18 +446,6 @@
    "latestUpdate": "There’s still a high police and security presence in country. Isolated security incidents may occur across the territory. New Caledonia held elections on 28 June. Demonstrations or protests may increase. Monitor local media and follow the advice of local authorities (see 'Safety')."
   },
   {
-   "name": "Qatar",
-   "iso3": "QAT",
-   "region": "Middle East",
-   "level": 3,
-   "levelLabel": "Reconsider your need to travel",
-   "updated": "2026-06-30",
-   "url": "https://www.smartraveller.gov.au/destinations/middle-east/qatar",
-   "summary": "Reconsider your need to travel to Qatar due to the unpredictable security situation in Qatar and the region.",
-   "subRegions": [],
-   "latestUpdate": "We've reviewed our travel advice for Qatar and have lowered the overall travel advice level. We now advise reconsider your need to travel due to the unpredictable security situation in Qatar and the Middle East region. There remains a risk of military action. If this happens, prioritise your safety. Follow local warning systems and, if warned of an imminent attack, move to an enclosed hardened shelter. If these are not available, seek an inner room without windows. Monitor developments closely and follow the advice of local authorities. Stay aware of your environment. Qatar airspace may open or close at short notice, impacting flights at Doha's international airport. Check the status of any border crossing before you travel by air, land or sea. Terrorism is a threat, including in Qatar. Terrorist attacks could happen at any time or anywhere. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. Maintain a high level of security awareness. If there's a security incident, follow the advice of local authorities. (see 'Safety')."
-  },
-  {
    "name": "Afghanistan",
    "iso3": "AFG",
    "region": "Asia",
@@ -341,18 +456,6 @@
    "summary": "Do not travel to Afghanistan due to the extremely dangerous security situation and the high threat of terrorism, kidnapping, arbitrary detention and armed conflict.",
    "subRegions": [],
    "latestUpdate": "We continue to advise do not travel to Afghanistan. This applies to everyone, including dual nationals. Australians have been injured, killed and arbitrarily detained in Afghanistan. Nowhere in Afghanistan is safe - even the capital. Australians have been kidnapped, arbitrarily detained and targeted by terrorist attacks. The security situation is extremely dangerous and volatile. Military conflict between Pakistan and Afghanistan has resulted in intense fighting in the border region and bombings in urban centers, including Kabul, Kandahar and other cities. Armed conflict could escalate further or expand to other locations without warning. Airports and borders may close suddenly. Do not travel to Afghanistan for any reason, including for tourism, cultural or family reasons. Do not book a tourist trip to Afghanistan, even if offered by reputable operators. Westerners, including Australians, have been shot, injured, or killed while on a guided tour. If you go to Afghanistan against our advice, you’re responsible for your own safety. Understand that you could die and make a will before you go. Australia has no Embassy in Kabul. Our ability to provide any consular or passport assistance is severely limited (see 'Safety')."
-  },
-  {
-   "name": "Kuwait",
-   "iso3": "KWT",
-   "region": "Middle East",
-   "level": 3,
-   "levelLabel": "Reconsider your need to travel",
-   "updated": "2026-06-29",
-   "url": "https://www.smartraveller.gov.au/destinations/middle-east/kuwait",
-   "summary": "Reconsider your need to travel to Kuwait due to the unpredictable security situation in Kuwait and the region.",
-   "subRegions": [],
-   "latestUpdate": "We continue to advise reconsider your need to travel due to the unpredictable security situation in Kuwait and the region. Military conflict in the region has caused travel disruptions including airspace closures and flight cancellations. Check with your airline or tour operator before travel. Flights to and from Kuwait International Airport on Kuwait Airways and Jazeera Airways have resumed. International airlines have also resumed services to and from Kuwait, though services remain limited. Check the status of any border crossing before you travel by air, land or sea. Changes may occur with limited or no notice. There remains a risk of military action. If this happens, prioritise your safety. Follow local warning systems and, if warned of an imminent attack, move to an enclosed hardened shelter. If these are not available, seek an inner room without windows. Monitor developments closely and follow local authorities’ advice. Stay aware of your environment. Australians require a visa to enter Kuwait. Australian citizens are eligible to obtain an e-visa or visa on arrival at Kuwaiti ports of entry. You should apply for an e-visa at the Ministry of Interior’s website prior to departure. Possession of an e-visa does not guarantee you will be permitted entry to Kuwait. You may be subject to further scrutiny and background checks upon arrival in Kuwait based upon your place of birth or background. If you believe you may be subject to entry restrictions upon arrival, contact the Kuwait Embassy in Australia prior to travel. Terrorism is a threat, including in Kuwait. Terrorist attacks could happen at any time or anywhere. Maintain a high level of security awareness. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. If there's a security incident, follow the advice of local authorities (see ‘Safety’)."
   },
   {
    "name": "Marshall Islands",
@@ -436,39 +539,6 @@
    "latestUpdate": "We continue to advise do not travel to Niger due to the volatile security environment, including the high risk of terrorism, kidnapping and violent crime. There's a high risk of kidnapping targeting foreigners. Terrorists may target places visited by foreigners, airports, government buildings and security facilities. There's ongoing political instability and conflict in Niger. Airports and borders may close suddenly. If you decide to remain, you're responsible for your own safety. Australia has no Embassy or Consulate in Niger. Our ability to provide any consular services is severely limited (see 'Safety')."
   },
   {
-   "name": "Oman",
-   "iso3": "OMN",
-   "region": "Middle East",
-   "level": 2,
-   "levelLabel": "Exercise a high degree of caution",
-   "updated": "2026-06-23",
-   "url": "https://www.smartraveller.gov.au/destinations/middle-east/oman",
-   "summary": "Exercise a high degree of caution in Oman due to the unpredictable security situation in the region.",
-   "subRegions": [],
-   "latestUpdate": "We've reviewed our advice and have lowered the overall travel advice level. We now advise exercise a high degree of caution to Oman due to the unpredictable security situation in the region. Be prepared for extreme weather conditions. The monsoon season is from June to September. Temperatures can reach 50°C. Flooding and cyclones can happen during this time. Sand and dust storms can occur during the drier months from October to May."
-  },
-  {
-   "name": "Israel",
-   "iso3": "ISR",
-   "region": "Middle East",
-   "level": 3,
-   "levelLabel": "Reconsider your need to travel",
-   "updated": "2026-06-23",
-   "url": "https://www.smartraveller.gov.au/destinations/middle-east/israel",
-   "summary": "Reconsider your need to travel to Israel overall due to the unpredictable security situation in Israel and the region.",
-   "subRegions": [
-    {
-     "level": 4,
-     "text": "Do not travel to border areas with Gaza (Palestine) due to armed conflict."
-    },
-    {
-     "level": 4,
-     "text": "Do not travel to border areas with Lebanon and Syria due to the volatile security situation."
-    }
-   ],
-   "latestUpdate": "We’ve reviewed our advice for Israel and have lowered the overall travel advice level. We now advise reconsider your need to travel due to the unpredictable security situation in Israel and the region. We continue to advise do not travel to border areas with Gaza (Palestine), Lebanon and Syria. Follow warnings from local authorities to avoid areas deemed to be at high risk of targeting. The local security situation could deteriorate with little or no notice. Flight operations may be suspended due to airspace closures and flight schedules may change at short notice. Check the status of any border crossing before you travel by air, land or sea. Border crossing points may be closed without notice (see 'Travel'). There remains a risk of military action. If this happens, prioritise your safety. Follow local warning systems and, if warned of an imminent attack, move to an enclosed hardened shelter. If these are not available, seek an inner room without windows. Stay aware of your environment. Monitor public safety updates through the National Emergency Portal (accessible only in Israel). If you intend to travel by land into a neighbouring country, check the latest public information from local authorities on entry requirements and border arrangements, including opening times. Israel has a naval blockade in place along the coast of Gaza (Palestine). Don't join others seeking to break the blockade. Previous attempts to break the blockade have resulted in death, injury, arrest or deportation of foreigners. Terrorism is a threat, including in Israel. Maintain a high level of security awareness. If there's a security incident, follow the advice of local authorities. Terror attacks can occur anywhere at any time, including by lone actors. Be alert to personal safety risks. There continues to be a very high threat of military and terrorist attacks against Israel, Israeli and Jewish interests across the region (see 'Safety)."
-  },
-  {
    "name": "Bolivia",
    "iso3": "BOL",
    "region": "Americas",
@@ -484,23 +554,6 @@
     }
    ],
    "latestUpdate": "The Bolivian government has declared a 90-day nationwide state of emergency for security forces to clear roadblocks and protests, and to stabilise the security situation. Monitor local media and follow the advice of local authorities (see 'Safety'). We continue to advise reconsider your need to travel to the Department of La Paz. There are widespread protests and roadblocks in and around La Paz, including on the route to the El Alto International Airport. There are also shortages of fuel, food, and medical supplies. The political and security situation in La Paz remains highly unpredictable. Similar disruptions may also occur in other parts of the country. We continue to advise exercise a high degree of caution in Bolivia overall due to the threat of violent crime and the risk of civil unrest."
-  },
-  {
-   "name": "Jordan",
-   "iso3": "JOR",
-   "region": "Middle East",
-   "level": 2,
-   "levelLabel": "Exercise a high degree of caution",
-   "updated": "2026-06-23",
-   "url": "https://www.smartraveller.gov.au/destinations/middle-east/jordan",
-   "summary": "Exercise a high degree of caution in Jordan overall due to the threat of terrorism and the unpredictable security situation in the region.",
-   "subRegions": [
-    {
-     "level": 3,
-     "text": "Reconsider your need to travel to the Syrian and Iraqi border regions due to the unstable security situation."
-    }
-   ],
-   "latestUpdate": "We've reviewed our advice and have lowered the overall travel advice level. We now advise exercise a high degree of caution in Jordan due to the threat of terrorism and the unpredictable security situation in the region. Higher levels apply in some areas. If the regional security situation deteriorates again, this may result in airspace closures, flight cancellations and other travel disruptions at short notice. Check with your airline or tour operator before travel. Monitor developments closely and follow the advice of local authorities. Stay aware of your environment. Terrorism is a threat, including in Jordan. Terrorist attacks could happen at any time or anywhere. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. Maintain a high level of security awareness. If there's a security incident, follow the advice of local authorities (see 'Safety'). If you're visiting Jordan on an e-Visa, a single visa is valid for 90 days. All visitors are required to register their residency details with the Immigration official on arrival, regardless of how long you are planning to stay in Jordan (see 'Travel')."
   },
   {
    "name": "Brazil",
@@ -681,18 +734,6 @@
    "latestUpdate": "You'll need a visa to visit Azerbaijan. You can apply for an electronic visa (e-visa) valid for 90 days, allowing you to stay in Azerbaijan for up to 30 days. You can do this online through Azerbaijan's Official Electronic Visa Portal (see 'Travel'). Land border crossings into a neighbouring country may open and close at short notice. Check with local authorities on entry requirements and border arrangements. Plan for possible delays and make sure you have supplies of food, water and medication (see 'Travel'). Terrorism is a threat, including in Azerbaijan. Terrorist attacks could happen at any time or place. Maintain a high level of security awareness. Avoid places that attract foreigners, tourists or crowds. If there's a security incident, follow the advice of local authorities (see 'Safety')."
   },
   {
-   "name": "Bahrain",
-   "iso3": "BHR",
-   "region": "Middle East",
-   "level": 3,
-   "levelLabel": "Reconsider your need to travel",
-   "updated": "2026-06-17",
-   "url": "https://www.smartraveller.gov.au/destinations/middle-east/bahrain",
-   "summary": "Reconsider your need to travel due to the volatile security situation in the region.",
-   "subRegions": [],
-   "latestUpdate": "We've reviewed our advice and have lowered the overall travel advice level. We now advise reconsider your need to travel to Bahrain due to the unpredictable security situation in Bahrain and the region. Military conflict in the region has caused travel disruptions including airspace closures and flight cancellations. Check the status of any border crossing before you travel by air, land or sea. There remains a risk of military action. If this happens, prioritise your safety. Follow local warning systems and, if warned of an imminent attack, move to an enclosed hardened shelter. If these are not available, seek an inner room without windows. Monitor developments closely and follow advice of local authorities. Terrorism is a threat, including in Bahrain. Terrorist attacks could happen at any time or anywhere. Maintain a high level of security awareness. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. If there's a security incident, follow the advice of local authorities (see 'Safety')."
-  },
-  {
    "name": "Bulgaria",
    "iso3": "BGR",
    "region": "Europe",
@@ -777,18 +818,6 @@
     }
    ],
    "latestUpdate": "You need a visa and a letter of invitation for Turkmenistan, even if you're only transiting. Get a visa before you arrive. Don't overstay your visa as there are penalties (see 'Travel'). Crossing the Turkmenistan land border requires a special authorisation from the Government of Turkmenistan. Borders can open and close at short notice. Entry and exit requirements can change without notice. Check the latest information with local authorities. Plan for possible delays at border crossings. Make sure you have all documentation, enough food, water and medication (see 'Travel')."
-  },
-  {
-   "name": "United Arab Emirates",
-   "iso3": "ARE",
-   "region": "Middle East",
-   "level": 3,
-   "levelLabel": "Reconsider your need to travel",
-   "updated": "2026-06-17",
-   "url": "https://www.smartraveller.gov.au/destinations/middle-east/united-arab-emirates",
-   "summary": "Reconsider your need to travel due to the unpredictable security situation in the UAE and the region.",
-   "subRegions": [],
-   "latestUpdate": "We've reviewed our travel advice for United Arab Emirates (UAE) and have lowered the overall travel advice level. We now advise reconsider your need to travel due to the unpredictable security situation in the UAE and the region. There remains a risk of military action. Follow local warning systems and, if warned of an imminent attack, move to an enclosed hardened shelter. If these are not available, seek an inner room without windows. Monitor developments closely and follow the advice of local authorities. Stay aware of your environment. UAE airspace may open or close at short notice, impacting flights at Abu Dhabi and Dubai International Airports. Check the status of any border crossing before you travel by air, land or sea. Terrorism is a threat, including in the UAE. Terrorist attacks could happen at any time or anywhere. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. If there's a security incident, follow the advice of local authorities (see 'Safety')."
   },
   {
    "name": "Palestine",
@@ -1913,18 +1942,6 @@
    "latestUpdate": "We continue to advise do not travel to Syria due to the dangerous security situation and the threat of armed conflict, air strikes, terrorism, arbitrary detention and kidnapping. The situation in the Middle East region remains volatile. There remains a risk of attacks and escalation. If you're in Syria and want to leave, we continue to advise you to make plans to do so. If you stay in Syria, prioritise your safety. Monitor developments closely and follow local authorities’ advice. Stay aware of your environment and avoid government, military or energy infrastructure, including oil production facilities. Avoid locations associated with Israeli, Jewish and US interests. Follow local warning systems and, if warned of an imminent attack, move to an enclosed hardened shelter, ideally underground or close to ground level if available. If these are not available, seek an inner room without windows. A limited number of commercial airlines fly to Syria. If you can secure a flight out of Syria and it’s safe to travel to the airport, you should do so. Airports and airlines may suspend operations without notice. Flight schedules may change at short notice. Before travelling by air, land or sea, verify the status of all border crossings. Consider recent attacks in your area and that airports are more vulnerable to strikes. Ensure you have access to food, water and essential medicines. Land border crossings between Syria and Lebanon have been the target of border clashes and bombings and could close without notice. If you're planning to cross a land border from Syria, contact the relevant authorities in your destination country for entry requirements. Entry and exit requirements for Syria may change without notice (see 'Travel' for further information on borders). The political and security situation in Syria remains fragile. Armed clashes are ongoing in parts of Syria and have resulted in many civilian casualties. Israeli air strikes may continue to occur throughout the country, including in Damascus. Terrorism is a threat, including in Syria. Terrorist attacks could happen at any time or anywhere. Maintain a high level of security awareness. If there's a security incident, follow the advice of local authorities (see 'Safety'). US Embassies in the Middle East are issuing local security alerts. We encourage you to monitor US security alerts in your location. Australia doesn't have an embassy or consulate in Syria. The ability of the Australian Government to provide consular help is extremely limited. If you need emergency consular assistance, contact the Consular Emergency Centre on +61 2 6261 3305 (if you're overseas) and 1300 555 135 (in Australia)."
   },
   {
-   "name": "Taiwan",
-   "iso3": "TWN",
-   "region": "Asia",
-   "level": 1,
-   "levelLabel": "Exercise normal safety precautions",
-   "updated": "2026-04-08",
-   "url": "https://www.smartraveller.gov.au/destinations/asia/taiwan",
-   "summary": "Exercise normal safety precautions in Taiwan.",
-   "subRegions": [],
-   "latestUpdate": "We continue to advise exercise normal safety precautions in Taiwan. You must complete a Taiwan Arrival Card (TWAC) within three days before you arrive in Taiwan. Check the TWAC website for information on how to complete and submit the TWAC online (see 'Travel')."
-  },
-  {
    "name": "Myanmar",
    "iso3": "MMR",
    "region": "Asia",
@@ -2102,23 +2119,6 @@
    "summary": "Exercise a high degree of caution in the Dominican Republic due to the threat of violent crime.",
    "subRegions": [],
    "latestUpdate": "We continue to advise exercise a high degree of caution due to the threat of violent crime. To enter and exit the Dominican Republic, you must complete the electronic entry and exit form, which shares information on your health and stay with local authorities (see 'Travel')."
-  },
-  {
-   "name": "Belarus",
-   "iso3": "BLR",
-   "region": "Europe",
-   "level": 4,
-   "levelLabel": "Do not travel",
-   "updated": "2026-02-20",
-   "url": "https://www.smartraveller.gov.au/destinations/europe/belarus",
-   "summary": "Do not travel to Belarus due to the volatile security environment caused by Russia’s war in neighbouring Ukraine, Russia's military presence along the Belarus border with Ukraine and the arbitrary enforcement of laws by Belarusian authorities.",
-   "subRegions": [
-    {
-     "level": 4,
-     "text": "Do not travel near the borders of Latvia, Lithuania, Poland and Russia unless exiting Belarus via a border crossing due to the volatile security environment and potential border closures/restrictions on movement. The border with Ukraine is closed."
-    }
-   ],
-   "latestUpdate": "We continue to advise do not travel to Belarus. The security environment continues to be volatile and could deteriorate at short notice. Despite the release of some high profile political prisoners, Belarus continues to impose strong penalties for very broadly defined and arbitrarily enforced offences such as 'terrorism propaganda' and 'discrediting' the Belarusian government, security forces and military organisations. Penalties may be severe, including the death penalty for ‘high treason’. Belarus doesn't recognise dual nationality. If you enter Belarus with a Belarusian passport, local authorities will treat you as a Belarusian national even if you're a dual national. This severely limits the consular services we can give if you're arrested or detained. Belarusians can't obtain or renew travel documents abroad. Dual citizens are at risk when renewing travel documents in Belarus and should obtain independent legal advice before travelling to or entering Belarus. If you're in Belarus, leave immediately using the limited commercial options available or private means. Review your personal security plans and carefully consider the safest means and route to depart. You're responsible for your safety and that of your family. Don't attempt to travel to the Belarus-Ukraine border or cross into Ukraine from Belarus. The Australian government can't evacuate you from Belarus."
   },
   {
    "name": "Albania",
