@@ -1,5 +1,5 @@
 {
- "lastRunAt": "2026-07-10T03:17:06+00:00",
+ "lastRunAt": "2026-07-10T22:30:06+00:00",
  "ok": true,
  "errors": [],
  "unmatched": [],
@@ -7,7 +7,7 @@
   "matched": 149,
   "countries": 38
  },
- "lastSuccessAt": "2026-07-10T03:17:18+00:00",
+ "lastSuccessAt": "2026-07-10T22:30:11+00:00",
  "destinationCount": 179,
- "pagesFetched": 10
+ "pagesFetched": 4
 }

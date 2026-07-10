@@ -1,22 +1,34 @@
 {
  "meta": {
-  "fetchedAt": "2026-07-10T03:17:18+00:00",
+  "fetchedAt": "2026-07-10T22:30:11+00:00",
   "source": "https://www.smartraveller.gov.au/destinations",
   "attribution": "Travel advice © Commonwealth of Australia (Smartraveller), CC BY 4.0. Unofficial viewer - not endorsed by the Australian Government.",
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "destinationCount": 179,
   "levelCounts": {
+   "4": 24,
    "2": 77,
    "1": 65,
-   "3": 13,
-   "4": 24
+   "3": 13
   },
-  "pagesFetched": 10,
+  "pagesFetched": 4,
   "errors": [],
   "unmatchedNames": []
  },
  "countries": [
+  {
+   "name": "Iran",
+   "iso3": "IRN",
+   "region": "Middle East",
+   "level": 4,
+   "levelLabel": "Do not travel",
+   "updated": "2026-07-10",
+   "url": "https://www.smartraveller.gov.au/destinations/middle-east/iran",
+   "summary": "Do not travel to Iran due to the volatile security situation, armed conflict, civil unrest and the risk of arbitrary detention.",
+   "subRegions": [],
+   "latestUpdate": "Do not travel to Iran. The security situation in Iran is extremely volatile. The situation in the Middle East region remains unpredictable. The risk of attacks and escalation continues. Consider options to depart Iran if you can secure one and it's safe to travel to the departure point. You should consider recent attacks in your area and verify the status of any border crossing before you travel by air, land or sea. Confirm local advice before heading to a land border (see 'Travel' for more information). If you remain in Iran, prioritise your safety. Monitor developments closely and follow local advice, including shelter in place instructions during strikes. Stay aware of your environment and avoid civilian, government, military or energy infrastructure, including oil production facilities. Avoid any locations associated with Israeli, Jewish and US interests. Follow local warning systems and, if warned of an imminent attack, move to an enclosed hardened shelter, ideally underground or close to ground level if available. If these are not available, seek an inner room without windows. Terrorism is a threat, including in Iran. Terrorist attacks could happen at any time or anywhere. Maintain a high level of security awareness. Australians, including dual nationals, are at a high risk of being detained (see 'Safety'). Do not enter into surrogacy arrangements in Iran. If you travel for surrogacy and the situation deteriorates, you may be unable to leave (see 'Local laws'). The US Virtual Embassy in Iran is issuing local security alerts. We encourage you to monitor US security alerts in your location and follow this advice. The Australian Embassy’s operations are suspended. Our ability to provide consular assistance in Iran is extremely limited. If you need emergency consular assistance, contact the Australian Government's Consular Emergency Centre on +61 2 6261 3305 (if you're overseas) or 1300 555 135 (in Australia)."
+  },
   {
    "name": "Jordan",
    "iso3": "JOR",
@@ -35,6 +47,23 @@
    "latestUpdate": "We continue to advise exercise a high degree of caution in Jordan due to the threat of terrorism and the unpredictable security situation in the region. Higher levels apply in some areas. There remains a risk of renewed military action. Avoid government, military or energy infrastructure locations. If warned of an imminent attack, move to an enclosed shelter, ideally underground or close to ground level if available. If these are not available, seek an inner room without windows. Prioritise your safety, monitor developments and follow the advice of local authorities. Jordanian airspace may result in airspace closures, flight cancellations and other travel disruptions at short notice. Check with your airline or tour operator before travel. Terrorism is a threat, including in Jordan. Terrorist attacks could happen at any time or anywhere. Avoid possible targets including venues that draw in foreigners, tourists or crowds where possible. Maintain a high level of security awareness. If there's a security incident, follow the advice of local authorities (see 'Safety'). If you're visiting Jordan on an e-Visa, a single visa is valid for 90 days. All visitors are required to register their residency details with the Immigration official on arrival, regardless of how long you are planning to stay in Jordan (see 'Travel')."
   },
   {
+   "name": "Papua New Guinea",
+   "iso3": "PNG",
+   "region": "Pacific",
+   "level": 2,
+   "levelLabel": "Exercise a high degree of caution",
+   "updated": "2026-07-10",
+   "url": "https://www.smartraveller.gov.au/destinations/pacific/papua-new-guinea",
+   "summary": "Exercise a high degree of caution in Papua New Guinea due to high levels of serious crime.",
+   "subRegions": [
+    {
+     "level": 3,
+     "text": "Reconsider your need to travel to Mount Hagen in the Western Highlands, all of the Southern Highlands, Hela and Enga Provinces due to the potential for unrest and ongoing security concerns."
+    }
+   ],
+   "latestUpdate": "PNG experiences interruptions to essential utility services, including water and power. Water PNG has announced it will undertake significant repairs to Port Moresby’s ageing water infrastructure, commencing 31 July. The repairs will interrupt the city’s water supply for at least 2-3 days. An extended interruption may affect health and safety, and could occur with little warning. Consider personal preparedness, such as bottled drinking water and other essential supplies (see 'Safety'). Vaccine-derived polio, measles and rubella cases have been reported in PNG. Ask your doctor about health risks and check your vaccinations are up to date (see 'Health). Local communities can block the Kokoda Track at short notice. Check with your trekking company for the latest information (see 'Travel'). Events that draw large groups of people, including cultural and sporting events, can turn violent. Protests, civil disorder and tribal violence can escalate quickly. Avoid areas where violence occurs and be alert to personal safety risks. Monitor local media for updates (see 'Safety')."
+  },
+  {
    "name": "Taiwan",
    "iso3": "TWN",
    "region": "Asia",
@@ -45,6 +74,39 @@
    "summary": "Exercise normal safety precautions in Taiwan.",
    "subRegions": [],
    "latestUpdate": "The Australian Office Taipei will be closed on Friday 10 July. Typhoon Bavi is expected to impact Taiwan from 10 to 11 July. High winds, heavy rain and storm surges are expected. Disruptions to essential services and transport may occur. Contact your travel provider or airline for the latest information on travel disruptions. Monitor local media and follow the instructions of the local authorities (see 'Safety'). You must complete a Taiwan Arrival Card (TWAC) within three days before you arrive in Taiwan. Check the TWAC website for information on how to complete and submit the TWAC online (see 'Travel')."
+  },
+  {
+   "name": "Malawi",
+   "iso3": "MWI",
+   "region": "Africa",
+   "level": 2,
+   "levelLabel": "Exercise a high degree of caution",
+   "updated": "2026-07-10",
+   "url": "https://www.smartraveller.gov.au/destinations/africa/malawi",
+   "summary": "Exercise a high degree of caution in Malawi due to the threat of violent crime.",
+   "subRegions": [],
+   "latestUpdate": "We continue to advise exercise a high degree of caution in Malawi due to the threat of violent crime. Malawi's Ministry of Health and Sanitation requires arriving travellers to complete a Traveller Health Check form (see 'Travel')."
+  },
+  {
+   "name": "Türkiye",
+   "iso3": "TUR",
+   "region": "Europe",
+   "level": 2,
+   "levelLabel": "Exercise a high degree of caution",
+   "updated": "2026-07-10",
+   "url": "https://www.smartraveller.gov.au/destinations/europe/turkiye",
+   "summary": "Exercise a high degree of caution in Türkiye overall due to the threat of terrorism.",
+   "subRegions": [
+    {
+     "level": 4,
+     "text": "Do not travel to within 10km of the border with Syria due to serious threat of terrorism, violence and acts of war in this area."
+    },
+    {
+     "level": 3,
+     "text": "Reconsider your need to travel to the provinces of Hakkari and Sirnak due to the unpredictable security situation."
+    }
+   ],
+   "latestUpdate": "There is an ongoing high threat of terrorist attacks in Türkiye. Stay alert to threats, especially in crowded areas, and stay away from demonstrations and protests as they can turn violent. Maintain a high level of security awareness. If there's a security incident, follow the advice of local authorities (see ‘Safety’)."
   },
   {
    "name": "Oman",
@@ -470,27 +532,6 @@
    "latestUpdate": "Air Marshall Islands (AMI) has suspended its flight services, following the grounding of the AMI fleet for repairs. Other airlines are still operating International flights from Amata Kabua International Airport. Contact your travel provider or airline for the latest updates. Travelling by boat, especially on open waters between atolls, can be hazardous. Vessels and their operators often do not meet Australian safety standards. Take appropriate precautions before travelling by boat (see 'Travel')."
   },
   {
-   "name": "Türkiye",
-   "iso3": "TUR",
-   "region": "Europe",
-   "level": 2,
-   "levelLabel": "Exercise a high degree of caution",
-   "updated": "2026-06-26",
-   "url": "https://www.smartraveller.gov.au/destinations/europe/turkiye",
-   "summary": "Exercise a high degree of caution in Türkiye overall due to the threat of terrorism.",
-   "subRegions": [
-    {
-     "level": 4,
-     "text": "Do not travel to within 10km of the border with Syria due to serious threat of terrorism, violence and acts of war in this area."
-    },
-    {
-     "level": 3,
-     "text": "Reconsider your need to travel to the provinces of Hakkari and Sirnak due to the unpredictable security situation."
-    }
-   ],
-   "latestUpdate": "The 2026 NATO Summit will take place in Ankara on 7-8 July. Expect road closures and restrictions around key venues. Public transport routes will be affected, and travellers are advised to monitor official traffic websites for updates. There could be longer processing times at the airport due to enhanced security measures. There is an ongoing high threat of terrorist attacks in Türkiye. Stay alert to threats, especially in crowded areas, and stay away from demonstrations and protests as they can turn violent. Maintain a high level of security awareness. If there's a security incident, follow the advice of local authorities (see ‘Safety’)."
-  },
-  {
    "name": "Vanuatu",
    "iso3": "VUT",
    "region": "Pacific",
@@ -566,23 +607,6 @@
    "summary": "Exercise a high degree of caution in Brazil due to the threat of violent crime.",
    "subRegions": [],
    "latestUpdate": "We continue to advise exercise a high degree of caution in Brazil due to the threat of violent crime. There's an increase in methanol poisoning cases being reported. Be alert to the potential risks of drink spiking and methanol poisoning when consuming alcoholic drinks (see 'Safety'). You'll need a visa to enter Brazil. Arrange your visa before arrival, as you won’t be able to obtain a visa at the airport or border entry point. Entry and exit conditions can change at short notice (see 'Travel')."
-  },
-  {
-   "name": "Papua New Guinea",
-   "iso3": "PNG",
-   "region": "Pacific",
-   "level": 2,
-   "levelLabel": "Exercise a high degree of caution",
-   "updated": "2026-06-23",
-   "url": "https://www.smartraveller.gov.au/destinations/pacific/papua-new-guinea",
-   "summary": "Exercise a high degree of caution in Papua New Guinea due to high levels of serious crime.",
-   "subRegions": [
-    {
-     "level": 3,
-     "text": "Reconsider your need to travel to Mount Hagen in the Western Highlands, all of the Southern Highlands, Hela and Enga Provinces due to the potential for unrest and ongoing security concerns."
-    }
-   ],
-   "latestUpdate": "We continue to advise exercise a high degree of caution in Papua New Guinea due to high levels of crime, tribal violence and civil unrest. Higher levels apply in some areas. You need to complete a Digital Arrival Card (DAC) when you travel to PNG. You can complete the DAC online up to 72 hours before arrival. You're also required to pay a carbon offset green fee when departing (see 'Travel'). PNG experiences interruptions to essential utility services, including water and power. Significant repairs are required to Port Moresby’s ageing water infrastructure and could interrupt the city’s water supply. An extended interruption would have impacts for health and safety. Consider personal preparedness, such as bottled drinking water and other essential supplies. The World Health Organization (WHO) has confirmed detection of vaccine-derived polio in Papua New Guinea. Consider a booster if it has been 10 years since your last polio vaccine. Local communities can block the Kokoda Track at short notice. Check with your trekking company for the latest information (see 'Travel'). Events that draw large groups of people, including cultural and sporting events, can turn violent. Protests, civil disorder and tribal violence can escalate quickly. Avoid areas where violence occurs and be alert to personal safety risks. Monitor local media for updates (see 'Safety')."
   },
   {
    "name": "Colombia",
@@ -686,18 +710,6 @@
    "summary": "Do not travel to Somalia due to the dangerous security situation and the threat of armed conflict, terrorism, kidnapping and violent crime.",
    "subRegions": [],
    "latestUpdate": "We continue to advise do not travel to Somalia. If you decide to remain, you're responsible for your own safety. Our ability to provide consular services in Somalia is extremely limited. Terrorist attacks occur frequently. The UK and US Embassies in Somalia issue frequent security alerts about potential imminent terrorist attacks (see 'Safety')."
-  },
-  {
-   "name": "Iran",
-   "iso3": "IRN",
-   "region": "Middle East",
-   "level": 4,
-   "levelLabel": "Do not travel",
-   "updated": "2026-06-17",
-   "url": "https://www.smartraveller.gov.au/destinations/middle-east/iran",
-   "summary": "Do not travel to Iran due to the volatile security situation, armed conflict, civil unrest and the risk of arbitrary detention.",
-   "subRegions": [],
-   "latestUpdate": "Do not travel to Iran. The security situation in Iran is extremely volatile. The situation in the Middle East region remains unpredictable. The risk of attacks and escalation continues. Consider options to depart Iran if you can secure one and it's safe to travel to the departure point. You should consider recent attacks in your area and verify the status of any border crossing before you travel by air, land or sea. Confirm local advice before heading to a land border (see 'Travel' for more information). If you remain in Iran, prioritise your safety. Monitor developments closely and follow local advice, including shelter in place instructions during strikes. Stay aware of your environment and avoid civilian, government, military or energy infrastructure, including oil production facilities. Avoid any locations associated with Israeli, Jewish and US interests. Follow local warning systems and, if warned of an imminent attack, move to an enclosed hardened shelter, ideally underground or close to ground level if available. If these are not available, seek an inner room without windows. Terrorism is a threat, including in Iran. Terrorist attacks could happen at any time or anywhere. Maintain a high level of security awareness. Australians, including dual nationals, are at a high risk of being detained (see 'Safety'). Do not enter into surrogacy arrangements in Iran. If you travel for surrogacy and the situation deteriorates, you may be unable to leave (see 'Local laws'). The US Virtual Embassy in Iran is issuing local security alerts. We encourage you to monitor US security alerts in your location and follow this advice. The Australian Embassy’s operations are suspended. Our ability to provide consular assistance in Iran is extremely limited. If you need emergency consular assistance, contact the Australian Government's Consular Emergency Centre on +61 2 6261 3305 (if you're overseas) or 1300 555 135 (in Australia)."
   },
   {
    "name": "Armenia",
@@ -2066,18 +2078,6 @@
    "summary": "Exercise normal safety precautions in Namibia.",
    "subRegions": [],
    "latestUpdate": "We advise exercise normal safety precautions in Namibia. You need to apply for a visa on arrival in Namibia or submit an online application prior to travel. Fees apply (see 'Travel')."
-  },
-  {
-   "name": "Malawi",
-   "iso3": "MWI",
-   "region": "Africa",
-   "level": 2,
-   "levelLabel": "Exercise a high degree of caution",
-   "updated": "2026-03-06",
-   "url": "https://www.smartraveller.gov.au/destinations/africa/malawi",
-   "summary": "Exercise a high degree of caution in Malawi due to the threat of violent crime.",
-   "subRegions": [],
-   "latestUpdate": "You now need a visa to enter Malawi. Fees apply. Entry and exit conditions can change at short notice (see 'Travel'). Crime, particularly theft, is common. Demonstrations and protests can be unpredictable and may turn violent quickly. During periods of unrest, avoid affected areas, monitor local media and follow the advice of local authorities (see ‘Safety’)."
   },
   {
    "name": "Guatemala",
