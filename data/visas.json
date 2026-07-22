@@ -1,6 +1,6 @@
 {
  "meta": {
-  "fetchedAt": "2026-07-21T22:14:44+00:00",
+  "fetchedAt": "2026-07-22T22:39:02+00:00",
   "source": "https://en.wikipedia.org/wiki/Visa_requirements_for_Australian_citizens",
   "attribution": "Visa requirement data adapted from the Wikipedia article 'Visa requirements for Australian citizens' (CC BY-SA 4.0). May lag official sources - always confirm with the destination's embassy or Smartraveller.",
   "license": "CC BY-SA 4.0",
@@ -90,7 +90,7 @@
    "categoryLabel": "Visa required in advance",
    "requirement": "Visa required",
    "allowedStay": "",
-   "notes": "Application for a tourist visa to Algeria must be accompanied either by a certificate of accommodation. Persons may be denied entry if entering with a passport containing visas or stamps issued by Israel. Visitors on tours organized to some southern regions by an approved travel agency may obtain a visa on arrival for up to 30 days.",
+   "notes": "Persons may be denied entry if entering with a passport containing visas or stamps issued by Israel. Visitors on tours organized to some southern regions by an approved travel agency may obtain a visa on arrival for up to 30 days.",
    "territory": false
   },
   {
