@@ -1,6 +1,6 @@
 {
  "meta": {
-  "fetchedAt": "2026-07-24T22:40:16+00:00",
+  "fetchedAt": "2026-07-25T22:13:26+00:00",
   "source": "https://en.wikipedia.org/wiki/Visa_requirements_for_Australian_citizens",
   "attribution": "Visa requirement data adapted from the Wikipedia article 'Visa requirements for Australian citizens' (CC BY-SA 4.0). May lag official sources - always confirm with the destination's embassy or Smartraveller.",
   "license": "CC BY-SA 4.0",
@@ -8,9 +8,9 @@
   "modifications": "Extracted from the source article's tables; raw requirement text normalised into six categories (free/voa/eta/evisa/required/none); destination names mapped to ISO 3166-1 alpha-3 codes; citation markers stripped; territory rows deduplicated against sovereign entries; notes truncated to 600 characters.",
   "entryCount": 224,
   "categoryCounts": {
-   "evisa": 33,
+   "evisa": 34,
    "free": 131,
-   "required": 15,
+   "required": 14,
    "voa": 34,
    "eta": 8,
    "none": 3
@@ -706,9 +706,9 @@
   {
    "name": "Ghana",
    "iso3": "GHA",
-   "category": "required",
-   "categoryLabel": "Visa required in advance",
-   "requirement": "Visa required",
+   "category": "evisa",
+   "categoryLabel": "eVisa (apply online in advance)",
+   "requirement": "eVisa",
    "allowedStay": "",
    "notes": "Visitors staying longer than 60 days are required to extend their visas at the Immigration Service .",
    "territory": false
