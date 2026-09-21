@@ -1,6 +1,6 @@
 {
  "meta": {
-  "fetchedAt": "2026-09-20T21:22:28+00:00",
+  "fetchedAt": "2026-09-21T22:32:21+00:00",
   "source": "https://en.wikipedia.org/wiki/Visa_requirements_for_Australian_citizens",
   "attribution": "Visa requirement data adapted from the Wikipedia article 'Visa requirements for Australian citizens' (CC BY-SA 4.0). May lag official sources - always confirm with the destination's embassy or Smartraveller.",
   "license": "CC BY-SA 4.0",
@@ -1480,7 +1480,7 @@
    "categoryLabel": "Visa required in advance",
    "requirement": "Visa required",
    "allowedStay": "",
-   "notes": "Process in tourist visas for stays with a period of 30 days is acquired. Due to security concerns, the Russian invasion of Ukraine , and arbitrary detentions, the Australian government advises its citizens not to visit Russia.",
+   "notes": "Application of an e-Visa for Australian citizens can be submitted online no later than 4 days before the expected date of entry into Russia. Process in tourist visas for stays with a period of 30 days is acquired. Due to security concerns, the Russian invasion of Ukraine , and arbitrary detentions, the Australian government advises its citizens not to visit Russia.",
    "territory": false
   },
   {
