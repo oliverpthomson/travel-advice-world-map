@@ -1,6 +1,6 @@
 {
  "meta": {
-  "fetchedAt": "2026-10-19T22:50:56+00:00",
+  "fetchedAt": "2026-10-20T22:11:33+00:00",
   "source": "https://en.wikipedia.org/wiki/Visa_requirements_for_Australian_citizens",
   "attribution": "Visa requirement data adapted from the Wikipedia article 'Visa requirements for Australian citizens' (CC BY-SA 4.0). May lag official sources - always confirm with the destination's embassy or Smartraveller.",
   "license": "CC BY-SA 4.0",
@@ -8,9 +8,9 @@
   "modifications": "Extracted from the source article's tables; raw requirement text normalised into six categories (free/voa/eta/evisa/required/none); destination names mapped to ISO 3166-1 alpha-3 codes; citation markers stripped; territory rows deduplicated against sovereign entries; notes truncated to 600 characters.",
   "entryCount": 224,
   "categoryCounts": {
-   "evisa": 34,
+   "evisa": 35,
    "free": 131,
-   "required": 14,
+   "required": 13,
    "voa": 34,
    "eta": 8,
    "none": 3
@@ -1836,9 +1836,9 @@
   {
    "name": "Turkmenistan",
    "iso3": "TKM",
-   "category": "required",
-   "categoryLabel": "Visa required in advance",
-   "requirement": "Visa required",
+   "category": "evisa",
+   "categoryLabel": "eVisa (apply online in advance)",
+   "requirement": "eVisa",
    "allowedStay": "",
    "notes": "10-day visa on arrival if holding a letter of invitation provided by a company registered in Turkmenistan with a prior approval from the Foreign Ministry . Visitors can apply to extend their stay for an additional 10 days. When transiting between two non-bordering countries, visitors can obtain a Turkmenistan transit visa for a five-day stay. This must be applied for in advance at the Turkmenistan Embassy. Visitors must also submit copies of the visas for the country of entry into Turkmenistan and the country of departure from Turkmenistan. Visa fee is 20 USD.",
    "territory": false
