@@ -1,6 +1,6 @@
 {
  "meta": {
-  "fetchedAt": "2026-10-25T21:35:44+00:00",
+  "fetchedAt": "2026-10-26T23:04:07+00:00",
   "source": "https://en.wikipedia.org/wiki/Visa_requirements_for_Australian_citizens",
   "attribution": "Visa requirement data adapted from the Wikipedia article 'Visa requirements for Australian citizens' (CC BY-SA 4.0). May lag official sources - always confirm with the destination's embassy or Smartraveller.",
   "license": "CC BY-SA 4.0",
@@ -290,7 +290,7 @@
    "categoryLabel": "eVisa (apply online in advance)",
    "requirement": "eVisa",
    "allowedStay": "90 days",
-   "notes": "Brazilian authorities have announced that Australian citizens will require a visa beginning 10 April 2025.",
+   "notes": "Brazilian authorities have announced that Australian citizens will require a eVisa beginning 10 April 2025.",
    "territory": false
   },
   {
